@@ -34,24 +34,24 @@ options = st.sidebar.multiselect(
 
 
 
-map_data = pd.DataFrame(
+'''map_data = pd.DataFrame(
     np.random.randn(60, 2) / [50, 50] + [55.764869, 12.468345],
     columns=['lat', 'lon'])
 
-st.map(map_data)
+st.map(map_data)'''
 
 
-x = st.slider('x')  # 👈 this is a widget
+'''x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
-
-
+'''
+st.dataframe(df)
 if st.checkbox('Show dataframe'):
     st.dataframe(df)
 
 
 chart_data = pd.DataFrame(
-     np.random.randn(50, 3),
-     columns=["a", "b", "c"])
+     np.random.randn(50, 1),
+     columns=["a"])
 
 st.bar_chart(chart_data)
 
