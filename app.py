@@ -27,12 +27,14 @@ st.sidebar.write('You selected: ', option)
 BIMCOMember = st.sidebar.radio(
      ('BIMCO Member', 'Non-BIMCO Member', 'Both'))
 
-if BIMCOMember == 'BIMCO Member':
+st.write(BIMCOMember)
+
+'''if BIMCOMember == 'BIMCO Member':
     st.write('Showing only BIMCO members.')
 elif BIMCOMember == 'Non-BIMCO Member':
     st.write('Showing only non-BIMCO members.')
 else:
-    st.write("Showing memebrs and non-members.")
+    st.write("Showing memebrs and non-members.")'''
 
 
 
