@@ -39,7 +39,7 @@ if st.checkbox('Show dataframe'):
 
 
 option = st.selectbox(
-    'Which number do you like best?',
-     df['first column'])
+    'What ship do you like the best?',
+     df['Ship Name'])
 
 'You selected: ', option
