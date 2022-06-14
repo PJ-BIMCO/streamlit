@@ -12,7 +12,7 @@ st.sidebar.image(
 )
 
 
-option = st.selectbox(
+option = st.sidebar.selectbox(
     'What ship do you like the best?',
      df['Ship Name'])
 
