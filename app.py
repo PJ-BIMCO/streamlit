@@ -15,7 +15,5 @@ st.sidebar.image(
 df = pd.read_pickle('MoU.pkl')
 
 
-st.line_chart(df)
-
-
+st.dataframe(df)
 
