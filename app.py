@@ -41,5 +41,5 @@ if st.checkbox('Show dataframe'):
     st.dataframe(df)
 
 
-st.markdown("# Page 2 ❄️")
-st.sidebar.markdown("# Page 2 ❄️")
+st.markdown('pages/page_1.py')
+st.sidebar.markdown('pages/page_1.py')
