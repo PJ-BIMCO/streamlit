@@ -24,8 +24,8 @@ st.sidebar.write('You selected: ', option)
 
 
 
-BIMCOMember = st.sidebar.radio(
-     ('BIMCO Member', 'Non-BIMCO Member', 'Both'))
+BIMCOMember = st.radio(
+     ('BIMCO Member', 'Non BIMCO Member', 'Both'))
 
 st.write(BIMCOMember)
 
