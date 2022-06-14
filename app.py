@@ -46,12 +46,12 @@ st.bar_chart(chart_data)
 
 d = st.date_input(
      "From:",
-     datetime.date(2022, 7, 6))
+     datetime.date(2022, 6, 7))
 
 
 d = st.date_input(
      "To:",
-     datetime.date(2022, 14, 6))
+     datetime.date(2022, 6, 14))
 
 
 
