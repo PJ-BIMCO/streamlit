@@ -46,13 +46,13 @@ st.bar_chart(chart_data)
 
 d = st.date_input(
      "From:",
-     datetime.date(2019, 7, 6))
+     datetime.date(2022, 7, 6))
 
 
 d = st.date_input(
      "To:",
-     datetime.date(2019, 7, 6))
+     datetime.date(2022, 14, 6))
 
 
 
-st.bar_chart(data=df['Ship Type'], width=400, height=200, use_container_width=True)
+st.bar_chart(data=df['Ship Type'], width=400, height=200)
