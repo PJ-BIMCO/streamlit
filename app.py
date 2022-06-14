@@ -27,15 +27,17 @@ A simple cryptocurrency price app pulling price data from the [Binance API](http
 a_dataframe = pd.DataFrame([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
 
-a_dataframe.to_pickle("a_file.pkl")
+'''a_dataframe.to_pickle("a_file.pkl")
 
 output = pd.read_pickle("a_file.pkl")
-print(output)
+print(output)'''
 
 st.header("**Selected Price**")
 
 # Load market data from Binance API
 df = pd.read_json("https://api.binance.com/api/v3/ticker/24hr")
+
+df = a_dataframe
 
 # Custom function for rounding values
 def round_value(input_value):
