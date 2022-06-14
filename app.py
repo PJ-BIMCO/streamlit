@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import datetime
-import matplotlib.pyplot as plt
 
 
 df = pd.read_pickle('MoU.pkl')
@@ -13,7 +12,7 @@ st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO")
 
 st.image(
     "BIMCO_Logo_small.png",
-    width=400,
+    width=200,
 )
 
 
@@ -56,8 +55,4 @@ d = st.date_input(
 
 
 
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-st.pyplot(fig)
+st.bar_chart(data=df['Ship Type'], width=400, height=200, use_container_width=True)
