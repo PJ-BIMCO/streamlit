@@ -16,7 +16,8 @@ option = st.sidebar.selectbox(
     'What ship do you like the best?',
      df['Ship Name'])
 
-st.sidebar('You selected: ', option)
+st.sidebar.write('You selected: ', option)
+
 
 
 
