@@ -27,7 +27,7 @@ st.sidebar.write('You selected: ', option)
 options = st.sidebar.multiselect(
      'Select Shiptype',
      ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship'],
-     ['Yellow', 'Red'])
+     ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship'])
 
 st.sidebar.write('You selected:', options)
 
