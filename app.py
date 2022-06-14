@@ -7,6 +7,10 @@ df = pd.read_pickle('MoU.pkl')
 
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO")
 
+
+st.markdown("# Main page 🎈")
+st.sidebar.markdown("# Main page 🎈")
+
 st.image(
     "BIMCO_Logo_small.png",
     width=400,
@@ -36,3 +40,6 @@ st.write(x, 'squared is', x * x)
 if st.checkbox('Show dataframe'):
     st.dataframe(df)
 
+
+st.markdown("# Page 2 ❄️")
+st.sidebar.markdown("# Page 2 ❄️")
