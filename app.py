@@ -8,9 +8,6 @@ df = pd.read_pickle('MoU.pkl')
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO")
 
 
-st.markdown("# Main page 🎈")
-st.sidebar.markdown("# Main page 🎈")
-
 st.image(
     "BIMCO_Logo_small.png",
     width=400,
@@ -41,5 +38,8 @@ if st.checkbox('Show dataframe'):
     st.dataframe(df)
 
 
-st.markdown('pages/page_1.py')
-st.sidebar.markdown('pages/page_1.py')
+chart_data = pd.DataFrame(
+     np.random.randn(50, 3),
+     columns=["a", "b", "c"])
+
+st.bar_chart(chart_data)
