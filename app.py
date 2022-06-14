@@ -23,14 +23,10 @@ st.sidebar.write('You selected: ', option)
 
 
 
-
 options = st.sidebar.multiselect(
      'Select Shiptype',
      ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship','Naval Ship','Offshore Ship','Special Purpose Ship','Ro-Ro Cargo Ship','General Cargo','Other'],
      ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship','Naval Ship','Offshore Ship','Special Purpose Ship','Ro-Ro Cargo Ship','General Cargo','Other'])
-
-
-
 
 
 
@@ -44,5 +40,15 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 
+
+
+d = st.date_input(
+     "From:",
+     datetime.date(2019, 7, 6))
+
+
+d = st.date_input(
+     "To:",
+     datetime.date(2019, 7, 6))
 
 
