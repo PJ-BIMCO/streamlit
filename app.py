@@ -24,13 +24,12 @@ st.sidebar.write('You selected: ', option)
 
 
 
-genre = st.radio(
-     ('Comedy', 'Drama', 'Documentary'))
+options = st.sidebar.multiselect(
+     'Select Shiptype',
+     ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship'],
+     ['Yellow', 'Red'])
 
-if genre == 'Comedy':
-    st.write('You selected comedy.')
-else:
-    st.write("You didn't select comedy.")
+st.sidebar.write('You selected:', options)
 
 
 
