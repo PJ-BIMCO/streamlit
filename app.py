@@ -26,10 +26,10 @@ st.sidebar.write('You selected: ', option)
 
 options = st.sidebar.multiselect(
      'Select Shiptype',
-     ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship'],
-     ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship'])
+     ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship','Naval Ship','Offshore Ship','Special Purpose Ship','Ro-Ro Cargo Ship','General Cargo','Other'],
+     ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship','Naval Ship','Offshore Ship','Special Purpose Ship','Ro-Ro Cargo Ship','General Cargo','Other'])
 
-st.sidebar.write('You selected:', options)
+
 
 
 
