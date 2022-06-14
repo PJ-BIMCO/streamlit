@@ -4,6 +4,11 @@ import numpy as np
 
 df = pd.read_pickle('MoU.pkl')
 
+
+st.markdown("# Main page 🎈")
+st.sidebar.markdown("# Main page 🎈")
+
+
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO")
 
 st.image(
@@ -17,8 +22,6 @@ option = st.sidebar.selectbox(
      df['Ship Name'])
 
 st.sidebar.write('You selected: ', option)
-
-
 
 
 
@@ -38,3 +41,5 @@ if st.checkbox('Show dataframe'):
     st.dataframe(df)
 
 
+st.markdown("# Page 2 ❄️")
+st.sidebar.markdown("# Page 2 ❄️")
