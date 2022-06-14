@@ -24,17 +24,14 @@ st.sidebar.write('You selected: ', option)
 
 
 
-BIMCOMember = st.radio(
-     ('BIMCO Member', 'Non BIMCO Member', 'Both'))
+genre = st.radio(
+     "What's your favorite movie genre",
+     ('Comedy', 'Drama', 'Documentary'))
 
-st.write(BIMCOMember)
-
-'''if BIMCOMember == 'BIMCO Member':
-    st.write('Showing only BIMCO members.')
-elif BIMCOMember == 'Non-BIMCO Member':
-    st.write('Showing only non-BIMCO members.')
-else:
-    st.write("Showing memebrs and non-members.")'''
+if genre == 'Comedy':
+     st.write('You selected comedy.')
+ else:
+     st.write("You didn't select comedy.")
 
 
 
