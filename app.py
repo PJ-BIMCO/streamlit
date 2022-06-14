@@ -9,7 +9,10 @@ st.sidebar.image(
     width=100,
 )
 
-df = pd.read_pickle(streamlitPath)
+
+
+
+df = pd.read_pickle('MoU.pkl')
 
 
 st.dataframe(df)
