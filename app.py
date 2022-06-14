@@ -4,14 +4,22 @@ import numpy as np
 import datetime
 
 
+def render_svg(svg):
+    """Renders the given svg string."""
+    b64 = base64.b64encode(svg.encode('utf-8')).decode("utf-8")
+    html = r'<img src="data:image/svg+xml;base64,%s"/>' % b64
+    st.write(html, unsafe_allow_html=True)
+
+
+
 df = pd.read_pickle('MoU.pkl')
 
 
-st.set_page_config(page_icon="BIMCO2016_Logo_RGB.svg", page_title="MoU BIMCO")
+st.set_page_config(page_icon=render_svg("BIMCO2016_Logo_RGB.svg"), page_title="MoU BIMCO")
 
 
 st.image(
-    "BIMCO2016_Logo_RGB.svg",
+    render_svg("BIMCO2016_Logo_RGB.svg"),
     width=200,
 )
 
@@ -56,3 +64,7 @@ d = st.date_input(
 
 
 st.bar_chart(data=df['Ship Type'], width=400, height=200, use_container_width=True)
+
+
+
+
