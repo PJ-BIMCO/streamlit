@@ -13,16 +13,13 @@ st.image(
 
 
 option = st.sidebar.selectbox(
-    'What ship do you like the best?',
+    'Please select a ship:',
      df['Ship Name'])
 
 st.sidebar.write('You selected: ', option)
 
 
 
-
-
-st.dataframe(df)
 
 
 
@@ -38,10 +35,6 @@ st.write(x, 'squared is', x * x)
 
 
 if st.checkbox('Show dataframe'):
-    chart_data = pd.DataFrame(
-       np.random.randn(20, 3),
-       columns=['a', 'b', 'c'])
-
-    chart_data
+    st.dataframe(df)
 
 
