@@ -7,7 +7,14 @@ st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO")
 st.sidebar.image(
     "BIMCO_Logo_small.png",
     width=100,
+
 )
+
+option = st.selectbox(
+    'What ship do you like the best?',
+     df['Ship Name'])
+
+'You selected: ', option
 
 
 
@@ -38,8 +45,3 @@ if st.checkbox('Show dataframe'):
     chart_data
 
 
-option = st.selectbox(
-    'What ship do you like the best?',
-     df['Ship Name'])
-
-'You selected: ', option
