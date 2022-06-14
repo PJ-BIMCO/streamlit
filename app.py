@@ -2,13 +2,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+df = pd.read_pickle('MoU.pkl')
+
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO")
 
 st.sidebar.image(
     "BIMCO_Logo_small.png",
     width=100,
-
 )
+
 
 option = st.selectbox(
     'What ship do you like the best?',
@@ -17,9 +19,6 @@ option = st.selectbox(
 'You selected: ', option
 
 
-
-
-df = pd.read_pickle('MoU.pkl')
 
 
 st.dataframe(df)
