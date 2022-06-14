@@ -23,6 +23,20 @@ st.sidebar.write('You selected: ', option)
 
 
 
+
+BIMCOMember = st.sidebar.radio(
+     ('BIMCO Member', 'Non-BIMCO Member', 'Both'))
+
+if BIMCOMember == 'BIMCO Member':
+    st.write('Showing only BIMCO members.')
+elif BIMCOMember == 'Non-BIMCO Member':
+    st.write('Showing only non-BIMCO members.')
+else:
+    st.write("Showing memebrs and non-members.")
+
+
+
+
 map_data = pd.DataFrame(
     np.random.randn(60, 2) / [50, 50] + [55.764869, 12.468345],
     columns=['lat', 'lon'])
@@ -43,3 +57,6 @@ chart_data = pd.DataFrame(
      columns=["a", "b", "c"])
 
 st.bar_chart(chart_data)
+
+
+
