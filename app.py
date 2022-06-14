@@ -20,7 +20,26 @@ st.dataframe(df)
 
 
 map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [55.764869, 12.468345],
+    np.random.randn(60, 2) / [50, 50] + [55.764869, 12.468345],
     columns=['lat', 'lon'])
 
 st.map(map_data)
+
+
+x = st.slider('x')  # 👈 this is a widget
+st.write(x, 'squared is', x * x)
+
+
+if st.checkbox('Show dataframe'):
+    chart_data = pd.DataFrame(
+       np.random.randn(20, 3),
+       columns=['a', 'b', 'c'])
+
+    chart_data
+
+
+option = st.selectbox(
+    'Which number do you like best?',
+     df['first column'])
+
+'You selected: ', option
