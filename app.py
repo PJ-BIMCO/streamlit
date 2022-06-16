@@ -7,7 +7,7 @@ import datetime
 df = pd.read_pickle('MoU.pkl')
 
 
-st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO")
+st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO",layout="wide")
 
 
 st.image(
