@@ -46,7 +46,7 @@ st.bar_chart(shipTypeTotal)
 
 source = shipTypeWeighted
 
-alt.Chart(source).mark_bar().encode(
+st.Chart(source).mark_bar().encode(
     x='sum(yield):Q',
     y=alt.Y('site:N', sort='-x')
 )
