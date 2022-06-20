@@ -45,15 +45,4 @@ st.bar_chart(shipTypeTotal)
 
 
 
-d = st.date_input(
-     "From:",
-     datetime.date(2022, 6, 7))
-
-
-d = st.date_input(
-     "To:",
-     datetime.date(2022, 6, 14))
-
-
-
-st.bar_chart(data=df['Ship Type'], width=400, height=200)
+st.bar_chart(data=shipTypeWeighted, width=400, height=200)
