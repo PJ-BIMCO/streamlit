@@ -42,14 +42,4 @@ st.bar_chart(shipTypeMonth)
 
 st.bar_chart(shipTypeTotal)
 
-
-
-source = shipTypeWeighted
-
-st.Chart(source).mark_bar().encode(
-    x='sum(yield):Q',
-    y=alt.Y('site:N', sort='-x')
-)
-
-
 st.bar_chart(data=shipTypeWeighted, width=400, height=800)
