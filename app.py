@@ -38,8 +38,14 @@ options = st.sidebar.multiselect(
 
 st.dataframe(df)
 
-st.bar_chart(shipTypeMonth)
+st.markdown("Detentions sorted by ship type past 30 days")
 
-st.bar_chart(shipTypeTotal)
+st.bar_chart(shipTypeMonth, width=400, height=800)
+
+st.markdown("Detentions sorted by ship type all time")
+
+st.bar_chart(shipTypeTotal, width=400, height=800)
+
+st.markdown("Detentions sorted by ship type and weighted by world fleet")
 
 st.bar_chart(data=shipTypeWeighted, width=400, height=800)
