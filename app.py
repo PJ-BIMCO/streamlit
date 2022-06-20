@@ -20,7 +20,6 @@ st.image(
 )
 
 
-st.markdown("Weekly News")
 
 option = st.sidebar.selectbox(
     'Please select a ship by name:',
@@ -45,4 +44,12 @@ st.bar_chart(shipTypeTotal)
 
 
 
-st.bar_chart(data=shipTypeWeighted, width=400, height=200)
+source = shipTypeWeighted
+
+alt.Chart(source).mark_bar().encode(
+    x='sum(yield):Q',
+    y=alt.Y('site:N', sort='-x')
+)
+
+
+st.bar_chart(data=shipTypeWeighted, width=400, height=800)
