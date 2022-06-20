@@ -20,7 +20,7 @@ option = st.sidebar.selectbox(
     'Please select a ship by name:',
      df['Ship Name'])
 
-#st.sidebar.write('You selected: ', option)
+#st.sidebar.write('You selected: ', option) dsad
 
 
 
