@@ -20,7 +20,7 @@ st.image(
 )
 
 
-st.markdown("")
+st.markdown("Weekly News")
 
 option = st.sidebar.selectbox(
     'Please select a ship by name:',
