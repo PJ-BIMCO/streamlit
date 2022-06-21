@@ -56,7 +56,12 @@ def page3():
     chart = (
         alt.Chart(data)
         .mark_bar()
-
+        .encode(
+            x=alt.X("value", type="quantitative", title=""),
+            y=alt.Y("index", type="nominal", title=""),
+            color=alt.Color("variable", type="nominal", title=""),
+            order=alt.Order("value", sort="descending"),
+        )
     )
 
     st.altair_chart(chart, use_container_width=True)
@@ -82,6 +87,12 @@ page_names_to_funcs = {
     "Common Defeciencies": page3,
     "Detentions vs Company":page4,
 }
+
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', 1000)
+pd.set_option('display.colheader_justify', 'center')
+pd.set_option('display.precision', 3)
 
 
 df = pd.read_pickle('pretty.pkl')
