@@ -7,7 +7,7 @@ def main_page():
     st.markdown("# Inspection Data")
 
     st.dataframe(df)
-    st.table(df)
+    #st.table(df)
 
 def page2():
     st.markdown("# Detentions vs Ship Type")
