@@ -37,6 +37,19 @@ def page2():
 
     st.bar_chart(data=shipTypeWeighted, width=400, height=800)
 
+    data = pd.DataFrame({
+    'date': [pd.Timestamp('2020-01-01'), pd.Timestamp('2020-01-02'), pd.Timestamp('2020-01-03')],
+    'b': [1, 1, 2],
+    'c': [0.5, 0.6, 0.1],
+    })
+
+    c = alt.Chart(data).mark_line(point=True).encode(
+      alt.Y('c:Q', axis=alt.Axis(format='%')),
+      x='date:T',
+      color='b:N'
+    )
+    st.altair_chart(c)
+
 
 def page3():
     st.markdown("# Common Defeciencies")
