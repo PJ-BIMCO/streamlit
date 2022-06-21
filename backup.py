@@ -67,7 +67,7 @@ def page3():
 
 
 
-   chart = (
+    chart = (
         alt.Chart(data)
         .mark_bar()
         .encode(
