@@ -55,7 +55,11 @@ def page3():
     chart = (
         alt.Chart(data)
         .mark_bar()
-
+        .encode(
+            x=alt.X("n", type="nominal", title=""),
+            y=alt.Y("index", type="nominal", title=""),
+            order=alt.Order("n", sort="descending"),
+        )
     )
 
     st.altair_chart(chart, use_container_width=True)
