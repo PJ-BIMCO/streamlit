@@ -59,7 +59,7 @@ def page3():
             x=alt.X("value", type="quantitative", title=""),
             y=alt.Y("index", type="nominal", title=""),
             color=alt.Color("variable", type="nominal", title=""),
-
+            order=alt.Order("value", sort="descending"),
         )
     )
 
