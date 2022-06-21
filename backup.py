@@ -89,9 +89,11 @@ page_names_to_funcs = {
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 1000)
+pd.set_option('display.width', 10000)
 pd.set_option('display.colheader_justify', 'center')
 pd.set_option('display.precision', 3)
+pd.set_option('display.max_colwidth', 1000)
+
 
 
 df = pd.read_pickle('pretty.pkl')
