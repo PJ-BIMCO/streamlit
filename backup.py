@@ -33,7 +33,7 @@ def page3():
         'Please select a ship by name:',
          df['Ship Name'])
 
-    #st.sidebar.write('You selected: ', option) dsad2d
+    #st.sidebar.write('You selected: ', option) dsad2dd
 
     options = st.sidebar.multiselect(
          'Select Shiptype',
