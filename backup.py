@@ -58,8 +58,8 @@ def page3():
             y="index"
         )
     )
-
-    st.altair_chart(chart, use_container_width=True)
+    st.altair_chart(chart)
+    #st.altair_chart(chart, use_container_width=True)
 
 
 
