@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import altair as alt
 
 
 def main_page():
@@ -43,11 +44,31 @@ def page3():
     st.markdown("Most common defeciencies found in inspections")
     #st.bar_chart(deficiencies, width=400, height=800)
 
+    chart_data = pd.DataFrame(
+        np.random.rand(9, 4),
+        index=["air","coffee","orange","whitebread","potato","wine","beer","wheatbread","carrot"],
+    )
 
-    fig = deficiencies.plot(kind='bar')
+    # Vertical stacked bar chart
+    st.bar_chart(chart_data)
 
+    # Convert wide-form data to long-form
+    # See: https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data
+    data = pd.melt(chart_data.reset_index(), id_vars=["index"])
 
-    st.pyplot(fig)
+    # Horizontal stacked bar chart
+    chart = (
+        alt.Chart(data)
+        .mark_bar()
+        .encode(
+            x=alt.X("value", type="quantitative", title=""),
+            y=alt.Y("index", type="nominal", title=""),
+            color=alt.Color("variable", type="nominal", title=""),
+            order=alt.Order("variable", sort="descending"),
+        )
+    )
+
+    st.altair_chart(chart, use_container_width=True)
 
 
 
