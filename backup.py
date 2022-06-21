@@ -72,7 +72,8 @@ def page3():
         .mark_bar()
         .encode(
             x='value',
-            y='index'
+            y='index',
+            order=alt.Order("value", sort="ascending")
         )
     )
 
