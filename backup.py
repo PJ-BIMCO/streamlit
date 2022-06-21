@@ -57,7 +57,7 @@ def page3():
         .mark_bar()
         .encode(
             x="n",
-            y="index",
+            y="index"
         )
     )
 
