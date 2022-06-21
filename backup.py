@@ -5,10 +5,18 @@ import numpy as np
 
 def main_page():
     st.markdown("# Inspection Data")
+    st.markdown("Latest Detention")
+
+    st.table(dfLatest)
+    st.markdown("Latest Detentions")
+
+    st.table(df100)
+
+    st.markdown("All Inspections")
 
     st.dataframe(df)
-    st.table(df100)
-    st.table(dfLatest)
+    
+
 
 def page2():
     st.markdown("# Detentions vs Ship Type")
