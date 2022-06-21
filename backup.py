@@ -53,7 +53,7 @@ def page3():
 
     # Horizontal stacked bar chart
     chart = (
-        alt.Chart(data).mark_bar().encode(
+        alt.Chart(deficiencies).mark_bar().encode(
             x='wheat:Q',
             y="n:O"
         )
