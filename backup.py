@@ -19,12 +19,10 @@ def main_page():
     
 
     arr = np.random.normal(1, 1, size=100)
+    fig, ax = plt.subplots()
+    ax.hist(arr, bins=20)
 
-    fig = plt.figure()
-
-    plt.hist(arr, bins=20)
-
-    st.plotly_chart(fig)
+    st.pyplot(fig)
 
 
 def page2():
