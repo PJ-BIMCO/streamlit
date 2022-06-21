@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+
 
 def main_page():
     st.markdown("# Inspection Data")
@@ -15,6 +17,14 @@ def main_page():
 
     st.dataframe(df)
     
+
+    arr = np.random.normal(1, 1, size=100)
+
+    fig = plt.figure()
+
+    plt.hist(arr, bins=20)
+
+    st.plotly_chart(fig)
 
 
 def page2():
