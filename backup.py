@@ -54,7 +54,7 @@ def page3():
 
     # Convert wide-form data to long-form
     # See: https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data
-    data = pd.melt(chart_data.reset_index(), id_vars=["index"])
+    data = pd.melt(deficiencies.reset_index(), id_vars=["index"])
 
     # Horizontal stacked bar chart
     chart = (
