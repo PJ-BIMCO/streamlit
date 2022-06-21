@@ -4,9 +4,10 @@ import numpy as np
 
 
 def main_page():
-    st.markdown("# View Inspection Data")
+    st.markdown("# Inspection Data")
 
     st.dataframe(df)
+    st.table(df)
 
 def page2():
     st.markdown("# Detentions vs Ship Type")
