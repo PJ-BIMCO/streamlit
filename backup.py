@@ -49,21 +49,21 @@ def page3():
 
     deficiencies1 = deficiencies.sort_values(by='n', ascending=False)
 
-    data = pd.melt(deficiencies1.reset_index(), id_vars=["index"])
+    data = pd.melt(deficiencies1.reset_index(), id_vars=["index"], value_vars=['n'])
 
     # Horizontal stacked bar chart
     chart = (
         alt.Chart(data)
         .mark_bar()
         .encode(
-            x=alt.X("value", type="quantitative", title=""),
+            x=alt.X("n", type="quantitative", title=""),
             y=alt.Y("index", type="nominal", title=""),
             color=alt.Color("variable", type="nominal", title=""),
-            order=alt.Order("variable", sort="descending"),
+            order=alt.Order("n", sort="descending"),
         )
     )
 
-    st.altair_chart(chart, use_container_width=True)
+    st.altair_chart(chart, use_container_width=False)
 
 
 
