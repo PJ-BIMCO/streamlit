@@ -53,7 +53,7 @@ def page3():
 
     # Horizontal stacked bar chart
     chart = (
-        alt.Chart(deficiencies1)
+        alt.Chart(data)
         .mark_bar()
         .encode(
             x=alt.X("value", type="quantitative", title=""),
