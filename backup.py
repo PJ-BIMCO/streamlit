@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import plotly.express as px 
 
 def main_page():
     st.markdown("# Inspection Data")
@@ -40,6 +40,14 @@ def page3():
 
     st.markdown("Most common defeciencies found in inspections")
     st.bar_chart(deficiencies, width=400, height=800)
+
+
+
+
+    fig=px.bar(df,x='total_bill',y='day', orientation='h')
+    st.write(fig)
+
+
 
     st.markdown("Most common defeciencies found when detained")
 
