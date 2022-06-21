@@ -59,7 +59,7 @@ def page3():
         .encode(
             x=alt.X("value", type="quantitative", title=""),
             y=alt.Y("index", type="nominal", title=""),
-            order=alt.Order("value", sort="descending"),
+            order=alt.Order("index", sort="descending"),
         )
     )
 
