@@ -67,7 +67,16 @@ def page3():
 
 
 
-   
+   chart = (
+        alt.Chart(data)
+        .mark_bar()
+        .encode(
+            x='value',
+            y='index'
+        )
+    )
+
+    st.altair_chart(chart, use_container_width=True)
 
 
 
