@@ -55,7 +55,7 @@ def page3():
     chart = (
         alt.Chart(data).mark_bar().encode(
             x='wheat:Q',
-            y="year:O"
+            y="n:O"
         )
     )
 
