@@ -7,10 +7,10 @@ def main_page():
     st.markdown("# Inspection Data")
     st.markdown("Latest Detention")
 
-    st.table(dfLatest)
+    st.dataframe(dfLatest)
     st.markdown("Latest Detentions")
 
-    st.table(df100)
+    st.dataframe(df100)
 
     st.markdown("All Inspections")
 
