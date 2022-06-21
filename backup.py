@@ -4,16 +4,15 @@ import numpy as np
 
 
 def main_page():
-    st.markdown("# Main page 🎈")
-    st.sidebar.markdown("# Main page 🎈")
+    st.markdown("# View Inspection Data")
 
     st.dataframe(df)
 
 def page2():
-    st.markdown("# Page 2 ❄️")
-    st.sidebar.markdown("# Page 2 ❄️")
+    st.markdown("# Page 2 :ship:")
+    st.sidebar.markdown("# Page 2 :ship:")
 
-    
+
     st.markdown("Detentions sorted by ship type past 30 days")
 
     st.bar_chart(shipTypeMonth, width=400, height=800)
@@ -25,7 +24,7 @@ def page2():
     st.markdown("Detentions sorted by ship type and weighted by world fleet")
 
     st.bar_chart(data=shipTypeWeighted, width=400, height=800)
-    
+
 
 def page3():
     st.markdown("# Page 3 🎉")
@@ -44,12 +43,21 @@ def page3():
          ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship','Naval Ship','Offshore Ship','Special Purpose Ship','Ro-Ro Cargo Ship','General Cargo','Other'])
 
 
+def page4():
+    st.markdown("# Page 4 🎉")
+    st.sidebar.markdown("# Page 4 🎉")
+    st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+
+
+
+
 
 
 page_names_to_funcs = {
     "View Data": main_page,
     "Detentions vs Ship Type": page2,
     "Common Defeciencies": page3,
+    "Detentions vs Company":page4,
 }
 
 
