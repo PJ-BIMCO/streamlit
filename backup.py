@@ -8,7 +8,7 @@ def main_page():
     st.markdown("Latest Detention")
 
     st.dataframe(dfLatest)
-    st.markdown("Latest Detentions")
+    st.markdown("Latest 10 Detentions")
 
     st.dataframe(df100)
 
@@ -38,17 +38,10 @@ def page2():
 def page3():
     st.markdown("# Common Defeciencies")
 
-    option = st.sidebar.selectbox(
-        'Please select a ship by name:',
-         df['Ship Name'])
+    st.markdown("Most common defeciencies found in inspections")
+    st.bar_chart(deficiencies, width=400, height=800)
 
-    #st.sidebar.write('You selected: ', option) dsad2dd
-
-    options = st.sidebar.multiselect(
-         'Select Shiptype',
-         ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship','Naval Ship','Offshore Ship','Special Purpose Ship','Ro-Ro Cargo Ship','General Cargo','Other'],
-         ['Container Ship', 'Bulk Carrier', 'Tanker Ship', 'Passenger Ship','Naval Ship','Offshore Ship','Special Purpose Ship','Ro-Ro Cargo Ship','General Cargo','Other'])
-
+    st.markdown("Most common defeciencies found when detained")
 
 def page4():
     st.markdown("# Detentions vs Company")
@@ -69,11 +62,11 @@ df = pd.read_pickle('pretty.pkl')
 df100 = pd.read_pickle('latest100.pkl')
 dfLatest = pd.read_pickle('latest.pkl')
 
-
-
 shipTypeMonth = pd.read_pickle('shipTypeMonth.pkl')
 shipTypeTotal = pd.read_pickle('shipTypeTotal.pkl')
 shipTypeWeighted = pd.read_pickle('shipTypeWeighted.pkl')
+
+deficiencies = pd.read_pickle('deficiencies.pkl')
 
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO",layout="wide")
 
