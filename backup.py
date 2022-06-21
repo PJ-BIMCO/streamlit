@@ -44,17 +44,12 @@ def page3():
     st.markdown("Most common defeciencies found in inspections")
     #st.bar_chart(deficiencies, width=400, height=800)
 
-    chart_data = pd.DataFrame(
-        np.random.rand(9, 4),
-        index=["air","coffee","orange","whitebread","potato","wine","beer","wheatbread","carrot"],
-    )
-
-    # Vertical stacked bar chart
-    st.bar_chart(chart_data)
-
     # Convert wide-form data to long-form
     # See: https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data
-    data = pd.melt(deficiencies.reset_index(), id_vars=["index"])
+
+    deficiencies1 = deficiencies.sort_values(by='n', ascending=False)
+
+    data = pd.melt(deficiencies1.reset_index(), id_vars=["index"])
 
     # Horizontal stacked bar chart
     chart = (
