@@ -9,8 +9,7 @@ def main_page():
     st.dataframe(df)
 
 def page2():
-    st.markdown("# Page 2 :ship:")
-    st.sidebar.markdown("# Page 2 :ship:")
+    st.markdown("# Detentions vs Ship Type")
 
 
     st.markdown("Detentions sorted by ship type past 30 days")
@@ -27,9 +26,7 @@ def page2():
 
 
 def page3():
-    st.markdown("# Page 3 🎉")
-    st.sidebar.markdown("# Page 3 🎉")
-
+    st.markdown("# Common Defeciencies")
 
     option = st.sidebar.selectbox(
         'Please select a ship by name:',
@@ -44,11 +41,8 @@ def page3():
 
 
 def page4():
-    st.markdown("# Page 4 🎉")
-    st.sidebar.markdown("# Page 4 🎉")
+    st.markdown("# Detentions vs Company")
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
-
-
 
 
 
