@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px 
 
 def main_page():
     st.markdown("# Inspection Data")
@@ -44,8 +43,7 @@ def page3():
 
 
 
-    fig=px.bar(df,x='total_bill',y='day', orientation='h')
-    st.write(fig)
+   
 
 
 
