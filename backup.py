@@ -53,12 +53,9 @@ def page3():
 
     # Horizontal stacked bar chart
     chart = (
-        alt.Chart(data)
-        .mark_bar()
-        .encode(
-            x=alt.X("n", type="nominal", title=""),
-            y=alt.Y("index", type="nominal", title=""),
-            order=alt.Order("n", sort="descending"),
+        alt.Chart(data).mark_bar().encode(
+            x='wheat:Q',
+            y="year:O"
         )
     )
 
