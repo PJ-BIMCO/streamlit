@@ -7,7 +7,8 @@ def main_page():
     st.markdown("# Inspection Data")
 
     st.dataframe(df)
-    #st.table(df)
+    st.table(df100)
+    st.table(dfLatest)
 
 def page2():
     st.markdown("# Detentions vs Ship Type")
@@ -56,7 +57,11 @@ page_names_to_funcs = {
 }
 
 
-df = pd.read_pickle('MoU.pkl')
+df = pd.read_pickle('pretty.pkl')
+df100 = pd.read_pickle('latest100.pkl')
+dfLatest = pd.read_pickle('latest.pkl')
+
+
 
 shipTypeMonth = pd.read_pickle('shipTypeMonth.pkl')
 shipTypeTotal = pd.read_pickle('shipTypeTotal.pkl')
