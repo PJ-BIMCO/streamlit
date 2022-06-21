@@ -59,11 +59,11 @@ def page3():
             x=alt.X("n", type="quantitative", title=""),
             y=alt.Y("index", type="nominal", title=""),
             color=alt.Color("variable", type="nominal", title=""),
-            order=alt.Order("n", sort="descending"),
+            order=alt.Order("variable", sort="descending"),
         )
     )
 
-    st.altair_chart(chart, use_container_width=False)
+    st.altair_chart(chart, use_container_width=True)
 
 
 
