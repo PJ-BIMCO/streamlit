@@ -57,9 +57,9 @@ def page3():
         alt.Chart(data)
         .mark_bar()
         .encode(
-            x=alt.X("value", type="quantitative", title=""),
+            x=alt.X("value", type="quantitative", title="Number of Times Found"),
             y=alt.Y("index", type="nominal", title=""),
-            order=alt.Order("index", sort="descending"),
+            order=alt.Order("value", sort="ascending")
         )
     )
 
