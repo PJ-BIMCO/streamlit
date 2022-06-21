@@ -18,11 +18,6 @@ def main_page():
     st.dataframe(df)
     
 
-    arr = np.random.normal(1, 1, size=100)
-    fig, ax = plt.subplots()
-    ax.hist(arr, bins=20)
-
-    st.pyplot(fig)
 
 
 def page2():
@@ -46,8 +41,13 @@ def page3():
     st.markdown("# Common Defeciencies")
 
     st.markdown("Most common defeciencies found in inspections")
-    st.bar_chart(deficiencies, width=400, height=800)
+    #st.bar_chart(deficiencies, width=400, height=800)
 
+
+    fig = deficiencies.plot(kind='bar')
+
+
+    st.pyplot(fig)
 
 
 
