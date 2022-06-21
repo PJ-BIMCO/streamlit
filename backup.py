@@ -38,9 +38,9 @@ def page2():
     st.bar_chart(data=shipTypeWeighted, width=400, height=800)
 
     data = pd.DataFrame({
-    'date': [pd.Timestamp('2020-01-01'), pd.Timestamp('2020-01-02'), pd.Timestamp('2020-01-03')],
-    'b': [1, 1, 2],
-    'c': [0.5, 0.6, 0.1],
+    'date': [pd.Timestamp('2020-01-01'), pd.Timestamp('2020-01-02'), pd.Timestamp('2020-01-03'),pd.Timestamp('2020-01-04'),pd.Timestamp('2020-01-05'),pd.Timestamp('2020-01-06')],
+    'b': [1, 1, 2,3,5,7],
+    'c': [0.5, 0.6, 0.1, 0.1,0.4,0.3],
     })
 
     c = alt.Chart(data).mark_line(point=True).encode(
