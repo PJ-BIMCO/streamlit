@@ -113,7 +113,6 @@ def page4():
 
 
 def page5():
-    st.markdown("# Detentions vs Age")
     video_file = open('Rick_Astley.mp4', 'rb')
     video_bytes = video_file.read()
 
