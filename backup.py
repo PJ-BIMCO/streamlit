@@ -66,21 +66,6 @@ def page3():
     st.altair_chart(chart, use_container_width=True)
 
 
-
-    chart = (
-        alt.Chart(data)
-        .mark_bar()
-        .encode(
-            x='value',
-            y='index',
-            order=alt.Order("value", sort="ascending")
-        )
-    )
-
-    st.altair_chart(chart, use_container_width=True)
-
-
-
     st.markdown("Most common defeciencies found when detained")
 
 def page4():
