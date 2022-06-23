@@ -63,7 +63,7 @@ def page3():
         )
     )
 
-    st.altair_chart(chart, use_container_width=True, width=200)
+    st.altair_chart(chart, use_container_width=True)
 
 
     st.markdown("Most common defeciencies found when detained")
