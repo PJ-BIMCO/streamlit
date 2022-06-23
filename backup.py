@@ -117,7 +117,7 @@ def page5():
     video_file = open('Rick_Astley.mp4', 'rb')
     video_bytes = video_file.read()
 
-    st.video(video_bytes)
+    st.video(video_bytes,start_time=0)
 
 
 
