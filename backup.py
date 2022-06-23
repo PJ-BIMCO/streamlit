@@ -125,7 +125,7 @@ page_names_to_funcs = {
     "Detentions vs Ship Type": page2,
     "Common Defeciencies": page3,
     "Detentions vs Age":page4,
-    "Top Secret Data (Dont Click)":page5,
+    "Classified Information (Dont Click)":page5,
 }
 
 pd.set_option('display.max_rows', None)
