@@ -58,8 +58,8 @@ def page3():
         .mark_bar()
         .encode(
             x=alt.X("value", type="quantitative", title="Number of Times Found"),
-            y=alt.Y("index", type="nominal", title=""),
-            order=alt.Order("value", sort="ascending")
+            y=alt.Y("index", type="nominal", title="")
+            #order=alt.Order("value", sort="ascending")
         )
     )
 
