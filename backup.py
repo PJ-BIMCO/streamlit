@@ -45,7 +45,7 @@ def page3():
 
     genre = st.radio(
      "Choose a Graph to Display",
-     ('defeciencies found in inspections', 'defeciencies found in detentions', 'defeciencies found in detentions vs inspections'))
+     ('defeciencies found in inspections', 'defeciencies found in detentions', 'defeciencies found in detentions vs all deficiencies'))
 
     if genre == 'defeciencies found in inspections':
 
