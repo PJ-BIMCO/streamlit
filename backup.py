@@ -65,7 +65,7 @@ def page3():
                 y = alt.Y("index", sort=alt.SortField(field="n", order='descending'))
             )
         )
-        st.altair_chart(chart, use_container_width=True)
+        st.altair_chart(chart, use_container_width=True,use_container_height=True)
         st.markdown("Most common defeciencies found when detained")
 
     elif genre == 'Defeciencies found in detentions':
