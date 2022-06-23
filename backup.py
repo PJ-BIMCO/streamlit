@@ -50,7 +50,7 @@ def page3():
     if genre == 'Comedy':
         st.write('You selected comedy.')
         page3subpage1
-    elifgenre == 'Drama':
+    elif genre == 'Drama':
         st.write("You didn't select comedy.")
     elif genre == 'Documentary':
         st.write("You didn't select comedy.")
