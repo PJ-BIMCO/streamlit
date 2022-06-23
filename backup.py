@@ -45,9 +45,12 @@ def page3():
 
     genre = st.radio(
      "Choose a Graph to Display",
-     ('defeciencies found in inspections', 'defeciencies found in detentions', 'defeciencies found in detentions vs all deficiencies'))
+     ('Deficiency Codes','Defeciencies found in inspections', 'Defeciencies found in detentions', 'Defeciencies found in detentions vs all deficiencies'))
 
-    if genre == 'defeciencies found in inspections':
+    if genre == 'Deficiency Codes':
+        st.markdown(deficiencyCodes)
+
+    elif genre == 'Defeciencies found in inspections':
 
 
         st.markdown("Most common defeciencies found in inspections")
@@ -64,7 +67,7 @@ def page3():
         st.altair_chart(chart, use_container_width=True)
         st.markdown("Most common defeciencies found when detained")
 
-    elif genre == 'defeciencies found in detentions':
+    elif genre == 'Defeciencies found in detentions':
 
         st.markdown("Most common defeciencies found in when ship has been detained")
         data = pd.melt(deficiencies_detention.reset_index(), id_vars=["index"])
@@ -80,11 +83,11 @@ def page3():
         st.altair_chart(chart, use_container_width=True)
         st.markdown("Most common defeciencies found when detained")
 
-    elif genre == 'defeciencies found in detentions vs all deficiencies':
+    elif genre == 'Defeciencies found in detentions vs all deficiencies':
 
 
 
-        st.markdown("Most common defeciencies found in when ship has been detained")
+        st.markdown("Relative chance of defeciency being grounds for detention")
         data = pd.melt(deficiencies_detention_weighted.reset_index(), id_vars=["index"])
         # Horizontal stacked bar chart
         chart = (
@@ -96,7 +99,7 @@ def page3():
             )
         )
         st.altair_chart(chart, use_container_width=True)
-        st.markdown("Most common defeciencies found when detained")
+        st.markdown("Relative chance of defeciency being grounds for detention")
 
 
 
@@ -134,6 +137,8 @@ shipTypeWeighted = pd.read_pickle('shipTypeWeighted.pkl')
 deficiencies = pd.read_pickle('deficiencies.pkl')
 deficiencies_detention = pd.read_pickle('deficiencies_detention.pkl')
 deficiencies_detention_weighted = pd.read_pickle('deficiencies_weighted.pkl')
+
+deficiencyCodes = deficiencies.index.tolist()
 
 
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO",layout="wide")
