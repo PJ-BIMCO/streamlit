@@ -48,20 +48,20 @@ def page3():
     # Convert wide-form data to long-form
     # See: https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data
 
-    deficiencies1 = deficiencies.sort_values(by='n', ascending=False)
+    #deficiencies1 = deficiencies.sort_values(by='n', ascending=False)
 
-    data = pd.melt(deficiencies1.reset_index(), id_vars=["index"])
+    data = pd.melt(deficiencies.reset_index(), id_vars=["index"])
 
     # Horizontal stacked bar chart
     chart = (
         alt.Chart(data)
-        .mark_bar()
-        .encode(
+            .mark_bar()
+            .encode(
             x=alt.X("value", type="quantitative", title="Number of Times Found"),
-            y=alt.Y("index", type="nominal", title=""),
-            order=alt.Order("value", sort="ascending")
+            y = alt.Y("index", sort=alt.SortField(field="n", order='descending'))
         )
     )
+
 
     st.altair_chart(chart, use_container_width=True)
 
