@@ -112,11 +112,21 @@ def page4():
 
 
 
+def page5():
+    st.markdown("# Detentions vs Age")
+    video_file = open('Rick_Astley.mp4', 'rb')
+    video_bytes = video_file.read()
+
+    st.video(video_bytes)
+
+
+
 page_names_to_funcs = {
     "View Data": main_page,
     "Detentions vs Ship Type": page2,
     "Common Defeciencies": page3,
     "Detentions vs Age":page4,
+    "Top Secret Sensitive Data (Dont Click)":page5,
 }
 
 pd.set_option('display.max_rows', None)
