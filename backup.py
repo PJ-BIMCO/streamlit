@@ -105,8 +105,9 @@ def page3():
 
 
 def page4():
-    st.markdown("# Detentions vs Company")
-    st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+    st.markdown("# Detentions vs Age")
+    #st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+    st.bar_chart(ship_age_weighted, width=400, height=800)
 
 
 
@@ -115,7 +116,7 @@ page_names_to_funcs = {
     "View Data": main_page,
     "Detentions vs Ship Type": page2,
     "Common Defeciencies": page3,
-    "Detentions vs Company":page4,
+    "Detentions vs Age":page4,
 }
 
 pd.set_option('display.max_rows', None)
@@ -140,6 +141,9 @@ deficiencies_detention = pd.read_pickle('deficiencies_detention.pkl')
 deficiencies_detention_weighted = pd.read_pickle('deficiencies_weighted.pkl')
 
 deficiencyCodes = deficiencies.index.tolist()
+
+
+ship_age_weighted = pd.read_pickle('ship_age_weighted.pkl')
 
 with open('Deficiencies.txt') as f:
     lines = f.readlines()
