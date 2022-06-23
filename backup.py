@@ -45,9 +45,11 @@ def page3():
 
     genre = st.radio(
      "Choose a Graph to Display",
-     ('Comedy', 'Drama', 'Documentary'))
+     ('defeciencies found in inspections', 'defeciencies found in detentions', 'defeciencies found in detentions vs inspections'))
 
-    if genre == 'Comedy':
+    if genre == 'defeciencies found in inspections':
+
+
         st.markdown("Most common defeciencies found in inspections")
         data = pd.melt(deficiencies.reset_index(), id_vars=["index"])
         # Horizontal stacked bar chart
@@ -61,9 +63,26 @@ def page3():
         )
         st.altair_chart(chart, use_container_width=True)
         st.markdown("Most common defeciencies found when detained")
-    elif genre == 'Drama':
-        st.write("You didn't select comedy.")
-    elif genre == 'Documentary':
+
+
+    elif genre == 'defeciencies found in detentions':
+
+        st.markdown("Most common defeciencies found in when ship has been detained")
+        data = pd.melt(deficiencies_detention.reset_index(), id_vars=["index"])
+        # Horizontal stacked bar chart
+        chart = (
+            alt.Chart(data)
+                .mark_bar()
+                .encode(
+                x=alt.X("value", type="quantitative", title="Number of Times Found"),
+                y = alt.Y("index", sort=alt.SortField(field="n", order='descending'))
+            )
+        )
+        st.altair_chart(chart, use_container_width=True)
+        st.markdown("Most common defeciencies found when detained")
+
+    elif genre == 'defeciencies found in detentions vs inspections':
+
         st.write("You didn't select comedy.")
 
 
@@ -116,6 +135,8 @@ shipTypeTotal = pd.read_pickle('shipTypeTotal.pkl')
 shipTypeWeighted = pd.read_pickle('shipTypeWeighted.pkl')
 
 deficiencies = pd.read_pickle('deficiencies.pkl')
+deficiencies_detention = pd.read_pickle('deficiencies_detention.pkl')
+
 
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO",layout="wide")
 
