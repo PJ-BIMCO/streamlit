@@ -1,0 +1,477 @@
+01101 | Lack of Ship Certificate or Documentation | Cargo Ship Safety Equipment (including exemption)
+01102 | Lack of Ship Certificate or Documentation | Cargo Ship Safety Construction (including exempt.)
+01103 | Lack of Ship Certificate or Documentation | Passenger Ship Safety (including exemption)
+01104 | Lack of Ship Certificate or Documentation | Cargo Ship Safety Radio (including exemption)
+01105 | Lack of Ship Certificate or Documentation | Cargo Ship Safety (including exemption)
+01106 | Lack of Ship Certificate or Documentation | Document of Compliance (DoC/ ISM)
+01107 | Lack of Ship Certificate or Documentation | Safety Management Certificate (SMC/ ISM)
+01108 | Lack of Ship Certificate or Documentation | Load Lines (including Exemption)
+01109 | Lack of Ship Certificate or Documentation | Decision-Support System for Masters on Pass. Ships
+01110 | Lack of Ship Certificate or Documentation | Authorization for grain carriage
+01111 | Lack of Ship Certificate or Documentation | Liquefied Gases in Bulk (CoF/GC Code)
+01112 | Lack of Ship Certificate or Documentation | Liquefied Gases in Bulk (ICoF/IGC Code)
+01113 | Lack of Ship Certificate or Documentation | Minimum Safe Manning Document
+01114 | Lack of Ship Certificate or Documentation | Dangerous Chemicals in Bulk (CoF/BCH Code)
+01115 | Lack of Ship Certificate or Documentation | Dangerous Chemicals in Bulk (ICoF/IBC Code)
+01116 | Lack of Ship Certificate or Documentation | Operational Limitations for Passenger ships
+01117 | Lack of Ship Certificate or Documentation | International Oil Pollution Prevention (IOPP)
+01118 | Lack of Ship Certificate or Documentation | Pollution Prevention by Noxious Liquid Sub in Bulk
+01119 | Lack of Ship Certificate or Documentation | International Sewage Pollution Prevention Cert.
+01120 | Lack of Ship Certificate or Documentation | Statement of Compliance CAS
+01121 | Lack of Ship Certificate or Documentation | Interim Statement of Compliance CAS
+01122 | Lack of Ship Certificate or Documentation | International ship security certificate
+01123 | Lack of Ship Certificate or Documentation | Continuous synopsis record
+01124 | Lack of Ship Certificate or Documentation | International Air Pollution Cert.
+01125 | Lack of Ship Certificate or Documentation | Engine International Air Pollution Prev. Cert.
+01126 | Lack of Ship Certificate or Documentation | Document of Compliance Dangerous Goods
+01127 | Lack of Ship Certificate or Documentation | Special Purpose Ship Safety
+01128 | Lack of Ship Certificate or Documentation | High Speed Craft Safety and Permit to Operate
+01129 | Lack of Ship Certificate or Documentation | Mobile Offshore Drilling Unit Safety
+01130 | Lack of Ship Certificate or Documentation | INF certificate of fitness
+01131 | Lack of Ship Certificate or Documentation | International Anti-fouling-System Certificate
+01132 | Lack of Ship Certificate or Documentation | Tonnage certificate
+01133 | Lack of Ship Certificate or Documentation | Civil Liability for Oil Pollution Damage Cert.
+01134 | Lack of Ship Certificate or Documentation | Polar Ship Certificate
+01135 | Lack of Ship Certificate or Documentation | Documents for carriage of dangerous goods
+01136 | Lack of Ship Certificate or Documentation | Ballast Water Management Certificate
+01137 | Lack of Ship Certificate or Documentation | Civil liability for Bunker oil pollution damage cert
+01138 | Lack of Ship Certificate or Documentation | International Energy Efficiency Certificate
+01139 | Lack of Ship Certificate or Documentation | Maritime Labour Certificate
+01140 | Lack of Ship Certificate or Documentation | Declaration of Maritime Labour Compliance (Part I and II)
+01199 | Lack of Ship Certificate or Documentation | Other (certificates)
+01201 | Lack of Crew Certificate or Documentation | Certificates for master and officers
+01202 | Lack of Crew Certificate or Documentation | Certificate for rating for watchkeeping
+01203 | Lack of Crew Certificate or Documentation | Certificates for radio personnel
+01204 | Lack of Crew Certificate or Documentation | Certificate for personnel on tankers
+01205 | Lack of Crew Certificate or Documentation | Certificate for personnel on fast rescue boats
+01206 | Lack of Crew Certificate or Documentation | Certificate for advanced fire-fighting
+01209 | Lack of Crew Certificate or Documentation | Manning specified by the minimum safe manning doc
+01210 | Lack of Crew Certificate or Documentation | Certificate for medical first aid
+01211 | Lack of Crew Certificate or Documentation | Cert for personnel on survival craft & rescue boat
+01212 | Lack of Crew Certificate or Documentation | Certificate for medical care
+01213 | Lack of Crew Certificate or Documentation | Evidence of Basic Training
+01214 | Lack of Crew Certificate or Documentation | Endorsement by flagstate
+01215 | Lack of Crew Certificate or Documentation | Application for Endorsement by flagstate
+01216 | Lack of Crew Certificate or Documentation | Cert for personnel on ships subject to the IGF Code
+01217 | Lack of Crew Certificate or Documentation | Ship Security Officer Certificate
+01218 | Lack of Crew Certificate or Documentation | Medical certificate
+01219 | Lack of Crew Certificate or Documentation | Training and qualification MLC - Personnal safety training
+01220 | Lack of Crew Certificate or Documentation | Seafarers' employment agreement (SEA)
+01221 | Lack of Crew Certificate or Documentation | Record of employment
+01222 | Lack of Crew Certificate or Documentation | Doc. evidence for personnel on passenger ships
+01223 | Lack of Crew Certificate or Documentation | Security awareness training
+01224 | Lack of Crew Certificate or Documentation | Certificate for rating able seafarer deck/engine and electro-technical
+01302 | Lack of Document | SAR Co-operation plan for pass.ships trad on fixe
+01303 | Lack of Document | Unattended Machinery Spaces (UMS) Evidence
+01304 | Lack of Document | Declaration of AFS compliance
+01305 | Lack of Document | Log-books/compulsory entries
+01306 | Lack of Document | Shipboard working arrangements
+01307 | Lack of Document | Maximum hours of work or minimum hours of rest
+01308 | Lack of Document | Records of seafarers' daily hours of work or rest
+01309 | Lack of Document | Fire control plan - all
+01310 | Lack of Document | Signs, indications
+01311 | Lack of Document | Survey report file
+01312 | Lack of Document | Thickness measurement report 01313 Booklet for bulk cargo loading/unloading/stowage
+01314 | Lack of Document | SOPEP
+01315 | Lack of Document | Oil record book
+01316 | Lack of Document | Cargo information
+01317 | Lack of Document | Cargo record book
+01318 | Lack of Document | P&A manual
+01319 | Lack of Document | Shipboard mar.poll.emergency plan for NLS
+01320 | Lack of Document | Garbage record book
+01323 | Lack of Document | Fire safety operational booklet
+01324 | Lack of Document | Material Safety Data Sheets(MSDS)
+01325 | Lack of Document | ACM statement of compliance (including exemption)
+01326 | Lack of Document | Stability Information Booklet
+01327 | Lack of Document | Energy Efficiency Design Index File
+01328 | Lack of Document | Ship Energy Efficiency Management plan
+01329 | Lack of Document | Report of inspection on MLC,2006
+01330 | Lack of Document | Procedure for complaint under MLC,2006
+01331 | Lack of Document | Collective bargaining agreement
+01332 | Lack of Document | AIS test report
+01333 | Lack of Document | Ship specific plans for the recovery of persons from the water
+01334 | Lack of Document | STS Operation Plan and Records of STS Operations
+01335 | Lack of Document | Polar Water Operational Manual
+01336 | Lack of Document | Certificate or documentary evidence of financial security for repatriation
+01337 | Lack of Document | Certificate or documentary evidence of financial security relating to shipowners liability
+01338 | Lack of Document | LNG Bunker delivery note
+01339 | Lack of Document | Copy of IGF Code or national legislation
+01340 | Lack of Document | Statement of compliance (MARPOL A. VI)
+02101 | Faulty Structural Condition | Closing devices/watertight doors
+02102 | Faulty Structural Condition | Damage control plan
+02103 | Faulty Structural Condition | Stability/strength/loading
+02104 | Faulty Structural Condition | Information on the A/A-max Ratio (Roro/pass.only)
+02105 | Faulty Structural Condition | Steering gear
+02106 | Faulty Structural Condition | Hull damage impairing seaworthiness
+02107 | Faulty Structural Condition | Ballast, fuel and other tanks
+02108 | Faulty Structural Condition | Electrical installations in general
+02109 | Faulty Structural Condition | Permanent means of access
+02110 | Faulty Structural Condition | Beams, frames, floors-op.damage
+02111 | Faulty Structural Condition | Beams, frames, floors-corrosion
+02112 | Faulty Structural Condition | Hull - corrosion
+02113 | Faulty Structural Condition | Hull - cracking
+02114 | Faulty Structural Condition | Bulkhead -corrosion
+02115 | Faulty Structural Condition | Bulkheads - operational damage
+02116 | Faulty Structural Condition | Bulkheads - cracking
+02117 | Faulty Structural Condition | Decks - corrosion
+02118 | Faulty Structural Condition | Decks - cracking
+02119 | Faulty Structural Condition | Enhanced survey programme (ESP)
+02120 | Faulty Structural Condition | Marking of IMO number
+02121 | Faulty Structural Condition | Cargo area segregation
+02122 | Faulty Structural Condition | Openings to cargo area, doors, ...  scuttles
+02123 | Faulty Structural Condition | Wheelhouse -door -window
+02125 | Faulty Structural Condition | Spaces in cargo areas
+02126 | Faulty Structural Condition | Cargo tank vent system
+02127 | Faulty Structural Condition | Safe access to tanker bows
+02128 | Faulty Structural Condition | Bulk carriers Add.safety measures
+02129 | Faulty Structural Condition | Bulkhead strength
+02130 | Faulty Structural Condition | Triangle mark
+02132 | Faulty Structural Condition | Water level detectors on single hold cargo ships
+02133 | Faulty Structural Condition | Asbestos containing materials
+02134 | Faulty Structural Condition | Loading/Ballast condition
+02135 | Faulty Structural Condition | Beams, frames, floors - construction
+02136 | Faulty Structural Condition | Hull - construction
+02137 | Faulty Structural Condition | Bulkheads - construction
+02138 | Faulty Structural Condition | Decks - construction
+02199 | Faulty Structural Condition | Other (Structural conditions)
+03101 | Faulty Water/Weathertight Condition | Overloading
+03102 | Faulty Water/Weathertight Condition | Freeboard marks
+03103 | Faulty Water/Weathertight Condition | Railing, gangway, walkway and means for safe passage
+03104 | Faulty Water/Weathertight Condition | Cargo & other hatchways
+03105 | Faulty Water/Weathertight Condition | Covers (hatchway-, portable-, tarpaulins, etc.)
+03106 | Faulty Water/Weathertight Condition | Windows, sidescuttles and deadlights
+03107 | Faulty Water/Weathertight Condition | Doors
+03108 | Faulty Water/Weathertight Condition | Ventilators, air pipes, casings
+03109 | Faulty Water/Weathertight Condition | Machinery space openings
+03110 | Faulty Water/Weathertight Condition | Manholes/flush scuttles
+03111 | Faulty Water/Weathertight Condition | Cargo ports and other similar openings
+03112 | Faulty Water/Weathertight Condition | Scuppers, inlets and discharges
+03113 | Faulty Water/Weathertight Condition | Bulwarks and freeing ports
+03114 | Faulty Water/Weathertight Condition | Stowage incl.uprights, lashing,etc. (timber)
+03199 | Faulty Water/Weathertight Condition | Other (load lines)
+04101 | Faulty Emergency Systems | Public address system
+04102 | Faulty Emergency Systems | Emergency fire pump and its pipes
+04103 | Faulty Emergency Systems | Emergency, lighting,batteries
+04104 | Faulty Emergency Systems | Low level lighting in corridors
+04105 | Faulty Emergency Systems | Location of emergency installations
+04106 | Faulty Emergency Systems | Emergency steering position com./ compass reading
+04107 | Faulty Emergency Systems | Emergency towing arrangements and procedures
+04108 | Faulty Emergency Systems | Muster list
+04109 | Faulty Emergency Systems | Fire drills
+04110 | Faulty Emergency Systems | Abandon ship drills
+04112 | Faulty Emergency Systems | Shipboard Marine Pollution emergency operations
+04113 | Faulty Emergency Systems | Water level indicator
+04114 | Faulty Emergency Systems | Emergency source of power - Emergency generator
+04115 | Faulty Emergency Systems | Safe areas
+04116 | Faulty Emergency Systems | Means of communication between safety centre and other control stations
+04117 | Faulty Emergency Systems | Functionality of Safety Systems
+04118 | Faulty Emergency Systems | Enclosed space entry and rescue drills
+04119 | Faulty Emergency Systems | IGF Code Drills and Emergency exercises
+04120 | Faulty Emergency Systems | Damage Control drills for passenger ships
+04121 | Faulty Emergency Systems | Crew familiarization with Emergency Systems
+04122 | Faulty Emergency Systems | Information on passengers
+05101 | Faulty Radio Communication | Distress messages: obligations and procedures
+05102 | Faulty Radio Communication | Functional requirements
+05103 | Faulty Radio Communication | Main installation
+05104 | Faulty Radio Communication | MF Radio installation
+05105 | Faulty Radio Communication | MF/HF Radio installation
+05106 | Faulty Radio Communication | INMARSAT ship earth station
+05107 | Faulty Radio Communication | Maintenance/duplication of equipment
+05108 | Faulty Radio Communication | Performance standards for radio equipment
+05109 | Faulty Radio Communication | VHF radio installation
+05110 | Faulty Radio Communication | Facilities for reception of marine safety inform.
+05111 | Faulty Radio Communication | Satellite EPIRB 406MHz/1.6GHz
+05112 | Faulty Radio Communication | VHF EPIRB
+05113 | Faulty Radio Communication | SART/AIS-SART
+05114 | Faulty Radio Communication | Reserve source of energy
+05115 | Faulty Radio Communication | Radio log (diary)
+05116 | Faulty Radio Communication | Operation/maintenance
+05118 | Faulty Radio Communication | Operation of GMDSS equipment
+05199 | Faulty Radio Communication | Other (radiocommunication)
+06101 | Faulty Cargo Operations Including Equipment | Cargo Securing Manual
+06102 | Faulty Cargo Operations Including Equipment | Grain
+06103 | Faulty Cargo Operations Including Equipment | Other cargo/timber/deck/construction
+06104 | Faulty Cargo Operations Including Equipment | Lashing material
+06105 | Faulty Cargo Operations Including Equipment | Atmosphere testing instrument
+06106 | Faulty Cargo Operations Including Equipment | Cargo transfer - Tankers
+06107 | Faulty Cargo Operations Including Equipment | Cargo operation
+06108 | Faulty Cargo Operations Including Equipment | Cargo density declaration
+06199 | Faulty Cargo Operations Including Equipment | Other (cargo)
+07102 | Faulty Fire Safety | Inert gas system
+07103 | Faulty Fire Safety | Division - decks,bulkheads and penetrations
+07104 | Faulty Fire Safety | Main Vertical zone
+07105 | Faulty Fire Safety | Fire doors/openings in fire-resisting divisions
+07106 | Faulty Fire Safety | Fire detection and alarm system
+07107 | Faulty Fire Safety | Fire patrol
+07108 | Faulty Fire Safety | Ready availability of fire fighting equipment
+07109 | Faulty Fire Safety | Fixed fire extinguishing installation
+07110 | Faulty Fire Safety | Fire fighting equipment and appliances
+07111 | Faulty Fire Safety | Personal equipment for fire safety
+07112 | Faulty Fire Safety | Emergency Escape Breathing Device and disposition
+07113 | Faulty Fire Safety | Fire pumps and its pipes
+07114 | Faulty Fire Safety | Remote Means of control (opening,pumps,ventilation,etc.) Machinery spaces
+07115 | Faulty Fire Safety | Fire-dampers
+07116 | Faulty Fire Safety | Ventilation
+07117 | Faulty Fire Safety | Jacketed high pressure lines and oil leakage alarm
+07118 | Faulty Fire Safety | International shore-connection
+07120 | Faulty Fire Safety | Means of escape
+07121 | Faulty Fire Safety | Crew alarm
+07122 | Faulty Fire Safety | Fire control plan
+07123 | Faulty Fire Safety | Operation of Fire protection systems
+07124 | Faulty Fire Safety | Maintenance of Fire protection systems
+07125 | Faulty Fire Safety | Evaluation of crew performance (fire drills)
+07199 | Faulty Fire Safety | Other (fire safety)
+08102 | Faulty Alarms | Emergency signal
+08103 | Faulty Alarms | Fire alarm
+08104 | Faulty Alarms | Steering gear alarm
+08105 | Faulty Alarms | Engineers' alarm
+08106 | Faulty Alarms | Inert gas alarm
+08107 | Faulty Alarms | Machinery controls alarm
+08108 | Faulty Alarms | UMS - alarms
+08109 | Faulty Alarms | Boiler alarm
+08110 | Faulty Alarms | Closing water-tight doors alarm
+08199 | Faulty Alarms | Other (alarms)
+09110 | Faulty Living Conditions | Electrical devices
+09199 | Faulty Living Conditions | Other (food)
+10101 | Faulty Safety and Navigation | Pilot ladders and hoist/pilot transfer arrangements
+10102 | Faulty Safety and Navigation | Type approval equipment
+10103 | Faulty Safety and Navigation | Radar
+10104 | Faulty Safety and Navigation | Gyro compass
+10105 | Faulty Safety and Navigation | Magnetic compass
+10106 | Faulty Safety and Navigation | Compass correction log
+10107 | Faulty Safety and Navigation | Automatic radar plotting aid (ARPA)
+10109 | Faulty Safety and Navigation | Lights, shapes, sound-signals
+10110 | Faulty Safety and Navigation | Signalling lamp
+10111 | Faulty Safety and Navigation | Charts
+10112 | Faulty Safety and Navigation | Electronic charts (ECDIS)
+10113 | Faulty Safety and Navigation | Automatic Identification System (AIS)
+10114 | Faulty Safety and Navigation | Voyage data recorder (VDR) / Simplified Voyage data recorder (S-VDR)
+10115 | Faulty Safety and Navigation | GNSS receiver/terrestrial radio navigation system
+10116 | Faulty Safety and Navigation | Nautical publications
+10117 | Faulty Safety and Navigation | Echo sounder
+10118 | Faulty Safety and Navigation | Speed and distance indicator
+10119 | Faulty Safety and Navigation | Rudder angle indicator
+10120 | Faulty Safety and Navigation | Revolution counter
+10121 | Faulty Safety and Navigation | Variable pitch indicator
+10122 | Faulty Safety and Navigation | Rate-of-turn indicator
+10123 | Faulty Safety and Navigation | International code of signals-SOLAS
+10124 | Faulty Safety and Navigation | Life-saving signals
+10125 | Faulty Safety and Navigation | Use of the automatic pilot
+10126 | Faulty Safety and Navigation | Record of drills and steering gear tests
+10127 | Faulty Safety and Navigation | Voyage or passage plan
+10128 | Faulty Safety and Navigation | Navigation bridge visibility
+10129 | Faulty Safety and Navigation | Navigation records
+10132 | Faulty Safety and Navigation | Communication-SOLAS chap. 5
+10133 | Faulty Safety and Navigation | Bridge operation
+10134 | Faulty Safety and Navigation | HSC operation
+10135 | Faulty Safety and Navigation | Monitoring of voyage or passage plan
+10136 | Faulty Safety and Navigation | Estabilishment of working language onboard
+10137 | Faulty Safety and Navigation | Long-range identification and tracking system
+10138 | Faulty Safety and Navigation | BNWAS
+11101 | Faulty Life saving appliances | Lifeboats
+11102 | Faulty Life saving appliances | Lifeboat inventory
+11103 | Faulty Life saving appliances | Stowage and provision of Lifeboats
+11104 | Faulty Life saving appliances | Rescue boats
+11105 | Faulty Life saving appliances | Rescue boat inventory
+11106 | Faulty Life saving appliances | Fast Rescue Boats
+11107 | Faulty Life saving appliances | Stowage of rescue boats
+11108 | Faulty Life saving appliances | Inflatable liferafts
+11109 | Faulty Life saving appliances | Rigid liferafts
+11110 | Faulty Life saving appliances | Stowage and provision of liferafts
+11111 | Faulty Life saving appliances | Marine Evacuation System
+11112 | Faulty Life saving appliances | Launching  arrangements for survival craft
+11113 | Faulty Life saving appliances | Launching  arrangements for rescue boats
+11114 | Faulty Life saving appliances | Helicopter landing and pick-up area
+11115 | Faulty Life saving appliances | Means of rescue
+11116 | Faulty Life saving appliances | Distress flares
+11117 | Faulty Life saving appliances | Lifebuoys incl. provision and disposition
+11118 | Faulty Life saving appliances | Lifejackets incl.provision and disposition
+11119 | Faulty Life saving appliances | Immersion suits
+11120 | Faulty Life saving appliances | Anti-exposure suits
+11121 | Faulty Life saving appliances | Thermal Protective Aids
+11122 | Faulty Life saving appliances | Radio life-saving appliances
+11123 | Faulty Life saving appliances | Emergency equipment for 2-way comm.
+11124 | Faulty Life saving appliances | Embarkation arrangement survival craft
+11125 | Faulty Life saving appliances | Embarkation arrangements rescue boats
+11126 | Faulty Life saving appliances | Means of recovery of life saving appliances
+11127 | Faulty Life saving appliances | Buoyant apparatus
+11128 | Faulty Life saving appliances | Line-throwing appliance
+11129 | Faulty Life saving appliances | Operational readiness of lifesaving appliances
+11130 | Faulty Life saving appliances | Evaluation, testing and approval
+11131 | Faulty Life saving appliances | On board training and instructions
+11132 | Faulty Life saving appliances | Maintenance and inspections
+11133 | Faulty Life saving appliances | Personal and group survival equipment
+11134 | Faulty Life saving appliances | Operation of Life
+11135 | Faulty Life saving appliances | Maintenance of Life Saving Appliances
+11199 | Faulty Life saving appliances | Other (life saving)
+12101 | Faulty Handling of Dangerous Goods | Stowage/segregation/packaging dangerous goods
+12102 | Faulty Handling of Dangerous Goods | Dangerous liquid chemicals in bulk
+12103 | Faulty Handling of Dangerous Goods | Liquefied gases in bulk
+12105 | Faulty Handling of Dangerous Goods | Temperature control
+12106 | Faulty Handling of Dangerous Goods | Instrumentation
+12107 | Faulty Handling of Dangerous Goods | Fire protection cargo deck area
+12108 | Faulty Handling of Dangerous Goods | Personal protection
+12109 | Faulty Handling of Dangerous Goods | Special requirement
+12110 | Faulty Handling of Dangerous Goods | Tank entry
+12112 | Faulty Handling of Dangerous Goods | Dangerous goods / harmful substances in pack. form
+12199 | Faulty Handling of Dangerous Goods | Other (tankers)
+13101 | Faulty Propulsion and Auxiliary Machinery | Propulsion main engine
+13102 | Faulty Propulsion and Auxiliary Machinery | Auxiliary engine
+13103 | Faulty Propulsion and Auxiliary Machinery | Gauges,thermometers, etc
+13104 | Faulty Propulsion and Auxiliary Machinery | Bilge pumping arrangements
+13105 | Faulty Propulsion and Auxiliary Machinery | UMS - Ship
+13106 | Faulty Propulsion and Auxiliary Machinery | Insulation wetted through (oil)
+13107 | Faulty Propulsion and Auxiliary Machinery | Maintenance procedures for all gas related installations
+13108 | Faulty Propulsion and Auxiliary Machinery | Operation of machinery
+13199 | Faulty Propulsion and Auxiliary Machinery | Other (machinery)
+14101 | Faulty Pollution Prevention (MARPOL Annex I) | Control of discharge
+14102 | Faulty Pollution Prevention (MARPOL Annex I) | Retention of oil on board
+14103 | Faulty Pollution Prevention (MARPOL Annex I) | Segregation of oil and water ballast
+14104 | Faulty Pollution Prevention (MARPOL Annex I) | Oil filtering equipment
+14105 | Faulty Pollution Prevention (MARPOL Annex I) | Pumping, piping and discharge arrangements
+14106 | Faulty Pollution Prevention (MARPOL Annex I) | Pump room bottom Protection
+14107 | Faulty Pollution Prevention (MARPOL Annex I) | Oil disch. Monitoring and control system
+14108 | Faulty Pollution Prevention (MARPOL Annex I) | 15 PPM Alarm arrangmts.
+14109 | Faulty Pollution Prevention (MARPOL Annex I) | Oil/water interface detector
+14110 | Faulty Pollution Prevention (MARPOL Annex I) | Standard disch. conn.
+14111 | Faulty Pollution Prevention (MARPOL Annex I) | SBT, CBT, COW
+14112 | Faulty Pollution Prevention (MARPOL Annex I) | Cow operations and equipment manual
+14113 | Faulty Pollution Prevention (MARPOL Annex I) | Double hull construction
+14114 | Faulty Pollution Prevention (MARPOL Annex I) | Hydrostatically balanced loading
+14115 | Faulty Pollution Prevention (MARPOL Annex I) | Condition assesment scheme
+14116 | Faulty Pollution Prevention (MARPOL Annex I) | Pollution report-MARPOL Annex I
+14117 | Faulty Pollution Prevention (MARPOL Annex I) | Ship type designation
+14119 | Faulty Pollution Prevention (MARPOL Annex I) | Oil and oily mixtures from machinery spaces
+14120 | Faulty Pollution Prevention (MARPOL Annex I) | Load, unload & clean proc. for cargo sp.(tankers)
+14199 | Faulty Pollution Prevention (MARPOL Annex I) | Other (MARPOL Annex I)
+14201 | Faulty Pollution Prevention (MARPOL Annex II) | Efficient stripping
+14202 | Faulty Pollution Prevention (MARPOL Annex II) | Residue disch.systems
+14203 | Faulty Pollution Prevention (MARPOL Annex II) | Tank washing equipm.
+14204 | Faulty Pollution Prevention (MARPOL Annex II) | Prohibited discharge of NLS slops
+14205 | Faulty Pollution Prevention (MARPOL Annex II) | Cargo heating systems - cat Y substances
+14206 | Faulty Pollution Prevention (MARPOL Annex II) | Vent. Procedures/equipment
+14207 | Faulty Pollution Prevention (MARPOL Annex II) | Pollution report-MARPOL Annex II
+14208 | Faulty Pollution Prevention (MARPOL Annex II) | Ship type designation
+14299 | Faulty Pollution Prevention (MARPOL Annex II) | Other MARPOL Annex II
+14301 | Faulty Pollution Prevention (MARPOL Annex III) | Packaging
+14302 | Faulty Pollution Prevention (MARPOL Annex III) | Marking and labelling
+14303 | Faulty Pollution Prevention (MARPOL Annex III) | Documentation (MARPOL Annex III)
+14304 | Faulty Pollution Prevention (MARPOL Annex III) | Stowage
+14399 | Faulty Pollution Prevention (MARPOL Annex III) | Other MARPOL Annex III
+14402 | Faulty Pollution Prevention (MARPOL Annex IV) | Sewage treatment plant
+14403 | Faulty Pollution Prevention (MARPOL Annex IV) | Sewage comminuting and disinfecting system
+14404 | Faulty Pollution Prevention (MARPOL Annex IV) | Sewage discharge connection
+14499 | Faulty Pollution Prevention (MARPOL Annex IV) | Other (MARPOL Annex IV)
+14501 | Faulty Pollution Prevention (MARPOL Annex V) | Garbage shipboard handling
+14502 | Faulty Pollution Prevention (MARPOL Annex V) | Placards
+14503 | Faulty Pollution Prevention (MARPOL Annex V) | Garbage management plan
+14599 | Faulty Pollution Prevention (MARPOL Annex V) | Other MARPOL  Annex V
+14601 | Faulty Pollution Prevention (MARPOL Annex VI) | Technical files and if applicable, monitoring manual
+14602 | Faulty Pollution Prevention (MARPOL Annex VI) | Record book of engine parameters
+14603 | Faulty Pollution Prevention (MARPOL Annex VI) | Approval for exhaust gas cleaning system
+14604 | Faulty Pollution Prevention (MARPOL Annex VI) | Bunker delivery notes
+14605 | Faulty Pollution Prevention (MARPOL Annex VI) | Type approval certificate of incinerator
+14606 | Faulty Pollution Prevention (MARPOL Annex VI) | Diesel engine relating to air pollution control
+14607 | Faulty Pollution Prevention (MARPOL Annex VI) | Quality of fuel oil
+14608 | Faulty Pollution Prevention (MARPOL Annex VI) | Incinerator incl.operations and operating manual
+14609 | Faulty Pollution Prevention (MARPOL Annex VI) | Volatile organic compounds in tankers
+14610 | Faulty Pollution Prevention (MARPOL Annex VI) | Operational procedures for engines or equipment
+14611 | Faulty Pollution Prevention (MARPOL Annex VI) | Ozone-depleting substances
+14612 | Faulty Pollution Prevention (MARPOL Annex VI) | SOx records
+14614 | Faulty Pollution Prevention (MARPOL Annex VI) | Sulphur oxides
+14615 | Faulty Pollution Prevention (MARPOL Annex VI) | Fuel change-over procedure
+14616 | Faulty Pollution Prevention (MARPOL Annex VI) | Alternative arrangements (SOx)
+14617 | Faulty Pollution Prevention (MARPOL Annex VI) | Sulphur content of fuel used
+14699 | Faulty Pollution Prevention (MARPOL Annex VI) | Other MARPOL Annex VI
+14701 | Faulty Pollution Prevention (Anti Fouling) | AFS supporting documentation
+14702 | Faulty Pollution Prevention (Anti Fouling) | Logbook entries referring AFS
+14703 | Faulty Pollution Prevention (Anti Fouling) | Paint condition
+14799 | Faulty Pollution Prevention (Anti Fouling) | Other AFS
+14801 | Faulty Pollution Prevention (Ballast Water) | Ballast Water Management Plan 14802 Ballast Water Record Book
+14803 | Faulty Pollution Prevention (Ballast Water) | Construction dates applicable for BWM
+14804 | Faulty Pollution Prevention (Ballast Water) | Ballast Water Exchange
+14805 | Faulty Pollution Prevention (Ballast Water) | Sediment removal and disposal
+14806 | Faulty Pollution Prevention (Ballast Water) | Crew Training and familiarization
+14807 | Faulty Pollution Prevention (Ballast Water) | Performance Standard not met
+14808 | Faulty Pollution Prevention (Ballast Water) | Prototype ballast water treatment
+14809 | Faulty Pollution Prevention (Ballast Water) | Conditions for exemptions
+14810 | Faulty Pollution Prevention (Ballast Water) | Ballast water discharge violation in port
+14811 | Faulty Pollution Prevention (Ballast Water) | Ballast Water Management System
+14899 | Faulty Pollution Prevention (Ballast Water) | Other BWM
+16102 | Faulty ISPS | Ship security alert system
+16103 | Faulty ISPS | Ship security plan
+16104 | Faulty ISPS | Ship security officer
+16105 | Faulty ISPS | Access control to ship
+16106 | Faulty ISPS | Security drills
+16199 | Faulty ISPS | Other (Maritime security)
+18101 | Faults in Minimum Requirements to Work on a Ship | Minimum age
+18102 | Faults in Minimum Requirements to Work on a Ship | Night Working
+18103 | Faults in Minimum Requirements to Work on a Ship | Medical fitness
+18199 | Faults in Minimum Requirements to Work on a Ship | Other (Minimum requirements)
+18201 | Faults in Condition of Employment | Fitness for duty - work and rest hours
+18202 | Faults in Condition of Employment | Legal documentation on work and rest hours
+18203 | Faults in Condition of Employment | Wages
+18204 | Faults in Condition of Employment | Non-payment of wages
+18205 | Faults in Condition of Employment | Measures to ensure transmission to seafarer's family
+18299 | Faults in Condition of Employment | Other (Conditions of employment)
+18301 | Faults in Accommodation, Recreational Facilities, Food and Catering | Noise, vibration and other ambient factors
+18302 | Faults in Accommodation, Recreational Facilities, Food and Catering | Sanitary Facilities
+18303 | Faults in Accommodation, Recreational Facilities, Food and Catering | Drainage
+18304 | Faults in Accommodation, Recreational Facilities, Food and Catering | Lighting (Accommodation)
+18305 | Faults in Accommodation, Recreational Facilities, Food and Catering | Hospital accomodation (Sickbay)
+18306 | Faults in Accommodation, Recreational Facilities, Food and Catering | Sleeping room, additional spaces
+18307 | Faults in Accommodation, Recreational Facilities, Food and Catering | Direct openings into sleeping rooms cargo/mach.
+18308 | Faults in Accommodation, Recreational Facilities, Food and Catering | Furnishings
+18309 | Faults in Accommodation, Recreational Facilities, Food and Catering | Berth dimensions, etc.
+18310 | Faults in Accommodation, Recreational Facilities, Food and Catering | Minimum headroom
+18311 | Faults in Accommodation, Recreational Facilities, Food and Catering | Messroom and recreational facilities
+18312 | Faults in Accommodation, Recreational Facilities, Food and Catering | Galley, handlingroom (maintenance)
+18313 | Faults in Accommodation, Recreational Facilities, Food and Catering | Cleanliness
+18314 | Faults in Accommodation, Recreational Facilities, Food and Catering | Provisions quantity
+18315 | Faults in Accommodation, Recreational Facilities, Food and Catering | Provisions quality and nutritional value
+18316 | Faults in Accommodation, Recreational Facilities, Food and Catering | Water, pipes, tanks
+18317 | Faults in Accommodation, Recreational Facilities, Food and Catering | Food personal hygiene
+18318 | Faults in Accommodation, Recreational Facilities, Food and Catering | Food temperature
+18319 | Faults in Accommodation, Recreational Facilities, Food and Catering | Food segregation
+18320 | Faults in Accommodation, Recreational Facilities, Food and Catering | Record of inspection (food and catering)
+18321 | Faults in Accommodation, Recreational Facilities, Food and Catering | Heating, air conditioning and ventilation
+18322 | Faults in Accommodation, Recreational Facilities, Food and Catering | Insulation
+18323 | Faults in Accommodation, Recreational Facilities, Food and Catering | Office
+18324 | Faults in Accommodation, Recreational Facilities, Food and Catering | Cold room, cold room cleanliness, cold room temperature
+18325 | Faults in Accommodation, Recreational Facilities, Food and Catering | Training and qualification of ship's cook
+18326 | Faults in Accommodation, Recreational Facilities, Food and Catering | Laundry, Adequate Locker
+18327 | Faults in Accommodation, Recreational Facilities, Food and Catering | Ventilation (Working spaces)
+18328 | Faults in Accommodation, Recreational Facilities, Food and Catering | Record of inspection
+18399 | Faults in Accommodation, Recreational Facilities, Food and Catering | Other (Accommodation, recreational facilities)
+18401 | Faults in Health Protection, Medical Care, Social Security | Medical Equipment, medical chest,
+18403 | Faults in Health Protection, Medical Care, Social Security | Standard medical report form
+18404 | Faults in Health Protection, Medical Care, Social Security | Medical doctor or person in charge of medical care
+18405 | Faults in Health Protection, Medical Care, Social Security | Medical advice by radio or satellite
+18406 | Faults in Health Protection, Medical Care, Social Security | Medical care onboard or ashore free of charge 18407 Lighting (Working spaces)
+18408 | Faults in Health Protection, Medical Care, Social Security | Electrical
+18409 | Faults in Health Protection, Medical Care, Social Security | Dangerous areas
+18410 | Faults in Health Protection, Medical Care, Social Security | Gas instruments
+18411 | Faults in Health Protection, Medical Care, Social Security | Emergency cleaning devices
+18412 | Faults in Health Protection, Medical Care, Social Security | Personal equipment
+18413 | Faults in Health Protection, Medical Care, Social Security | Warning notices
+18414 | Faults in Health Protection, Medical Care, Social Security | Protection machines/parts
+18415 | Faults in Health Protection, Medical Care, Social Security | Entry dangerous spaces
+18416 | Faults in Health Protection, Medical Care, Social Security | Ropes and wires
+18417 | Faults in Health Protection, Medical Care, Social Security | Anchoring devices
+18418 | Faults in Health Protection, Medical Care, Social Security | Winches & capstans
+18419 | Faults in Health Protection, Medical Care, Social Security | Adequate lighting - mooring arrangements
+18420 | Faults in Health Protection, Medical Care, Social Security | Cleanliness of engine room
+18421 | Faults in Health Protection, Medical Care, Social Security | Guards - fencing around dangerous machinery parts
+18422 | Faults in Health Protection, Medical Care, Social Security | Asbestos fibres
+18423 | Faults in Health Protection, Medical Care, Social Security | Preventative information
+18424 | Faults in Health Protection, Medical Care, Social Security | Steam pipes, pressure pipes, wires (insulation)
+18425 | Faults in Health Protection, Medical Care, Social Security | Access / structural features (ship)
+18426 | Faults in Health Protection, Medical Care, Social Security | Exposure to harmful levels of ambiant factors
+18427 | Faults in Health Protection, Medical Care, Social Security | Ship's occupational safety and health policies and programmes
+18428 | Faults in Health Protection, Medical Care, Social Security | On board programme for the prevention of occupational injuries and deaseases
+18429 | Faults in Health Protection, Medical Care, Social Security | Procedure for inspection, reporting and correcting unsafe conditions and for investigating and reporting on-board occupational accidents
+18430 | Faults in Health Protection, Medical Care, Social Security | Ship's safety committee
+18431 | Faults in Health Protection, Medical Care, Social Security | Investigation after accident 18432 Risk evaluation, training and instruction to seafarers
+18499 | Faults in Health Protection, Medical Care, Social Security | Other (Health protection, medical care)
+99102 | Other Faults | Other (SOLAS operational)
+99103 | Other Faults | Other (MARPOL operational)

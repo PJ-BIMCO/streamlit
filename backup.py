@@ -48,8 +48,8 @@ def page3():
      ('Deficiency Codes','Defeciencies found in inspections', 'Defeciencies found in detentions', 'Defeciencies found in detentions vs all deficiencies'))
 
     if genre == 'Deficiency Codes':
-        for deficiencyCode in deficiencyCodes:
-            st.markdown(deficiencyCode)
+        for line in lines:
+            st.markdown(line)
 
     elif genre == 'Defeciencies found in inspections':
 
@@ -140,6 +140,10 @@ deficiencies_detention = pd.read_pickle('deficiencies_detention.pkl')
 deficiencies_detention_weighted = pd.read_pickle('deficiencies_weighted.pkl')
 
 deficiencyCodes = deficiencies.index.tolist()
+
+with open('Deficiencies.txt') as f:
+    lines = f.readlines()
+
 
 
 st.set_page_config(page_icon="BIMCO_Logo_small.png", page_title="MoU BIMCO",layout="wide")
