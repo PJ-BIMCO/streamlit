@@ -42,6 +42,19 @@ def page2():
 def page3():
     st.markdown("# Common Defeciencies")
 
+
+    genre = st.radio(
+     "Choose a Graph to Display",
+     ('Comedy', 'Drama', 'Documentary'))
+
+    if genre == 'Comedy':
+        st.write('You selected comedy.')
+    elif:
+        st.write("You didn't select comedy.")
+    elif:
+        st.write("You didn't select comedy.")
+
+
     st.markdown("Most common defeciencies found in inspections")
     #st.bar_chart(deficiencies, width=400, height=800)
 
