@@ -59,11 +59,9 @@ def page3():
         .encode(
             x=alt.X("value", type="quantitative", title="Number of Times Found"),
             y=alt.Y("index", type="nominal", title=""),
-            order=alt.Order("value")
+            order=alt.Order("value", sort="ascending")
         )
     )
-
-    chart.save('chart.pdf')
 
     st.altair_chart(chart, use_container_width=True)
 
