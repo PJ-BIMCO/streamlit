@@ -49,22 +49,17 @@ def page3():
 
     if genre == 'Comedy':
         st.write('You selected comedy.')
-    elif:
+        page3subpage1
+    elifgenre == 'Drama':
         st.write("You didn't select comedy.")
-    elif:
+    elif genre == 'Documentary':
         st.write("You didn't select comedy.")
 
+
+def page3subpage1():
 
     st.markdown("Most common defeciencies found in inspections")
-    #st.bar_chart(deficiencies, width=400, height=800)
-
-    # Convert wide-form data to long-form
-    # See: https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data
-
-    #deficiencies1 = deficiencies.sort_values(by='n', ascending=False)
-
     data = pd.melt(deficiencies.reset_index(), id_vars=["index"])
-
     # Horizontal stacked bar chart
     chart = (
         alt.Chart(data)
@@ -74,12 +69,9 @@ def page3():
             y = alt.Y("index", sort=alt.SortField(field="n", order='descending'))
         )
     )
-
-
     st.altair_chart(chart, use_container_width=True)
-
-
     st.markdown("Most common defeciencies found when detained")
+
 
 def page4():
     st.markdown("# Detentions vs Company")
