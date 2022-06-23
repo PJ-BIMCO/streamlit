@@ -48,8 +48,19 @@ def page3():
      ('Comedy', 'Drama', 'Documentary'))
 
     if genre == 'Comedy':
-        st.write('You selected comedy.')
-        page3subpage1
+        st.markdown("Most common defeciencies found in inspections")
+        data = pd.melt(deficiencies.reset_index(), id_vars=["index"])
+        # Horizontal stacked bar chart
+        chart = (
+            alt.Chart(data)
+                .mark_bar()
+                .encode(
+                x=alt.X("value", type="quantitative", title="Number of Times Found"),
+                y = alt.Y("index", sort=alt.SortField(field="n", order='descending'))
+            )
+        )
+        st.altair_chart(chart, use_container_width=True)
+        st.markdown("Most common defeciencies found when detained")
     elif genre == 'Drama':
         st.write("You didn't select comedy.")
     elif genre == 'Documentary':
