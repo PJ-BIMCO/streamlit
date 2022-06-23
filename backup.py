@@ -48,7 +48,7 @@ def page3():
      ('Deficiency Codes','Defeciencies found in inspections', 'Defeciencies found in detentions', 'Defeciencies found in detentions vs all deficiencies'))
 
     if genre == 'Deficiency Codes':
-        for deficiencyCode in deficiencyCodes.sort():
+        for deficiencyCode in deficiencyCodes:
             st.markdown(deficiencyCode)
 
     elif genre == 'Defeciencies found in inspections':
