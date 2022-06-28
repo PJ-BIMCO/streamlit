@@ -134,16 +134,16 @@ def page6():
         ['Green', 'Yellow', 'Red', 'Blue'],
         ['Yellow', 'Red'])
 
-    col2.write('You selected:', options)
+    col2.subheader('You selected:', options)
 
 
     d_from = col2.date_input(
         "From")
-    col2.write('From:', d_from)
+    col2.subheader('From:', d_from)
 
     d_to = col2.date_input(
         "To")
-    col2.write('To:', d_to)
+    col2.subheader('To:', d_to)
 
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
