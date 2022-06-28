@@ -121,16 +121,30 @@ def page5():
 def page6():
     st.markdown("# Common grounds for detention based on port or country")
 
-    d = st.date_input(
+
+    options = st.multiselect(
+        'What are your favorite colors',
+        ['Green', 'Yellow', 'Red', 'Blue'],
+        ['Yellow', 'Red'])
+
+    st.write('You selected:', options)
+
+
+    d_from = st.date_input(
         "When's your birthday",
         datetime.date(2019, 7, 6))
-    st.write('Your birthday is:', d)
+    st.write('Your birthday is:', d_from)
 
-
+    d_to = st.date_input(
+        "When's your birthday",
+        datetime.date(2019, 7, 6))
+    st.write('Your birthday is:', d_to)
 
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
+
+    st.bar_chart(data=df, width=400, height=800)
 
     st.map(df)
 
