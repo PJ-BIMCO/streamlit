@@ -129,7 +129,6 @@ def page6():
     col1.line_chart(data)
 
     col2.subheader("A narrow column with the data")
-    col2.write(data)
     options = col2.multiselect(
         'What are your favorite colors',
         ['Green', 'Yellow', 'Red', 'Blue'],
