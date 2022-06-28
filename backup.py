@@ -148,7 +148,7 @@ def page6():
     d_to = col2.date_input(
         "To")
 
-    agree = col2.checkbox('Only Show detained')
+    agree = col2.checkbox('Only Show Deficiencies of Detained Ships')
 
     #if agree:
 
