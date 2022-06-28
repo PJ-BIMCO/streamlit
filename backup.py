@@ -148,6 +148,11 @@ def page6():
     d_to = col2.date_input(
         "To")
 
+    agree = st.checkbox('Only Show detained')
+
+    if agree:
+        st.write('Great!')
+
     # Whole page
     #st.map(df)
 
