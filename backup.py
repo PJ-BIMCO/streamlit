@@ -122,6 +122,16 @@ def page6():
     st.markdown("# Common grounds for detention based on port or country")
 
 
+    col1, col2 = st.columns([3, 1])
+    data = np.random.randn(10, 1)
+
+    col1.subheader("A wide column with a chart")
+    col1.line_chart(data)
+
+    col2.subheader("A narrow column with the data")
+    col2.write(data)
+
+
     options = st.multiselect(
         'What are your favorite colors',
         ['Green', 'Yellow', 'Red', 'Blue'],
@@ -132,11 +142,11 @@ def page6():
 
     d_from = st.date_input(
         "From")
-    st.write('Your birthday is:', d_from)
+    st.write('From:', d_from)
 
     d_to = st.date_input(
         "To")
-    st.write('Your birthday is:', d_to)
+    st.write('To:', d_to)
 
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
