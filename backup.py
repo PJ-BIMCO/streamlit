@@ -121,6 +121,20 @@ def page5():
 def page6():
     st.markdown("# Common grounds for detention based on port or country")
 
+    d = st.date_input(
+        "When's your birthday",
+        datetime.date(2019, 7, 6))
+    st.write('Your birthday is:', d)
+
+
+
+    df = pd.DataFrame(
+        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+        columns=['lat', 'lon'])
+
+    st.map(df)
+
+
 page_names_to_funcs = {
     "View Data": main_page,
     "Detentions vs Ship Type": page2,
