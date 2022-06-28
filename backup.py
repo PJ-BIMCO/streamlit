@@ -127,7 +127,7 @@ def page6():
 
 
     #Column 1 
-    col1.subheader("A wide column with a chart")
+    #ol1.subheader("A wide column with a chart")
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
@@ -136,7 +136,7 @@ def page6():
 
 
     # Column 2 
-    col2.subheader("A narrow column with the data")
+    #col2.subheader("A narrow column with the data")
     options = col2.multiselect(
         'Choose a country or port',
         ['Denmark', 'København', 'Falster', 'Germany'],
@@ -149,7 +149,7 @@ def page6():
         "To")
 
     # Whole page
-    st.map(df)
+    #st.map(df)
 
 
 page_names_to_funcs = {
