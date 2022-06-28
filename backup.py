@@ -131,11 +131,11 @@ def page6():
 
 
     d_from = st.date_input(
-        "When's your birthday")
+        "From")
     st.write('Your birthday is:', d_from)
 
     d_to = st.date_input(
-        "When's your birthday")
+        "To")
     st.write('Your birthday is:', d_to)
 
     df = pd.DataFrame(
