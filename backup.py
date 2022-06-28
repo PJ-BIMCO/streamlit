@@ -119,7 +119,7 @@ def page5():
     st.video(video_bytes,start_time=0)
 
 def page6():
-    st.markdown("# Common grounds for detention based on port or country")
+    st.markdown("# Grounds for detention based on port or country")
 
 
     col1, col2 = st.columns([3, 1])
