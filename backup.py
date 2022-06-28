@@ -125,9 +125,17 @@ def page6():
     col1, col2 = st.columns([3, 1])
     data = np.random.randn(10, 1)
 
-    col1.subheader("A wide column with a chart")
-    col1.line_chart(data)
 
+    #Column 1 
+    col1.subheader("A wide column with a chart")
+    df = pd.DataFrame(
+        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+        columns=['lat', 'lon'])
+
+    col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
+
+
+    # Column 2 
     col2.subheader("A narrow column with the data")
     options = col2.multiselect(
         'What are your favorite colors',
@@ -136,7 +144,6 @@ def page6():
 
     col2.subheader('You selected:', options)
 
-
     d_from = col2.date_input(
         "From")
     col2.subheader('From:', d_from)
@@ -144,13 +151,8 @@ def page6():
     d_to = col2.date_input(
         "To")
     col2.subheader('To:', d_to)
-
-    df = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-        columns=['lat', 'lon'])
-
-    col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
-
+    
+    # Whole page
     st.map(df)
 
 
