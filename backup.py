@@ -142,7 +142,7 @@ def page6():
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
 
-    st.bar_chart(data=df, width=400, height=800)
+    st.bar_chart(data=shipTypeWeighted, width=400, height=800)
 
     st.map(df)
 
