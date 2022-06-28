@@ -118,14 +118,17 @@ def page5():
 
     st.video(video_bytes,start_time=0)
 
-
+def page6():
+    st.markdown("# Common grounds for detention based on port or country")
 
 page_names_to_funcs = {
     "View Data": main_page,
     "Detentions vs Ship Type": page2,
     "Common Deficiencies": page3,
     "Detentions vs Age":page4,
+    "Common grounds for detention based on port or country":page6,
     "Classified Information (Dont Click)":page5,
+
 }
 
 pd.set_option('display.max_rows', None)
