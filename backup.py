@@ -138,20 +138,16 @@ def page6():
     # Column 2 
     col2.subheader("A narrow column with the data")
     options = col2.multiselect(
-        'What are your favorite colors',
-        ['Green', 'Yellow', 'Red', 'Blue'],
-        ['Yellow', 'Red'])
-
-    col2.subheader('You selected:', options)
+        'Choose a country or port',
+        ['Denmark', 'København', 'Falster', 'Germany'],
+        ['København', 'Falster'])
 
     d_from = col2.date_input(
         "From")
-    col2.subheader('From:', d_from)
 
     d_to = col2.date_input(
         "To")
-    col2.subheader('To:', d_to)
-    
+
     # Whole page
     st.map(df)
 
