@@ -123,7 +123,7 @@ def page5():
 page_names_to_funcs = {
     "View Data": main_page,
     "Detentions vs Ship Type": page2,
-    "Common Defeciencies": page3,
+    "Common Deficiencies": page3,
     "Detentions vs Age":page4,
     "Classified Information (Dont Click)":page5,
 }
