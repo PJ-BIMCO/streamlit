@@ -119,6 +119,17 @@ def page5():
     st.video(video_bytes,start_time=0)
 
 def page6():
+
+
+
+    countryList= list(dict.fromkeys(deficiencies_at_port_country['Country Name']))
+    cleanedCountryList = [x for x in countryList if str(x) != 'nan']
+    cleanedCountryList.sort()
+
+    portsList = list(dict.fromkeys(deficiencies_at_port_country['Port']))
+    cleanedPortsList = [x for x in portsList if str(x) != 'nan' or not str(x)]
+    cleanedPortsList.sort()
+
     st.markdown("# Detention based on port or country")
 
 
@@ -134,11 +145,11 @@ def page6():
     #col2.subheader("A narrow column with the data")
     countries = col2.multiselect(
         'Choose a country or port',
-        deficiencies_at_port_country['Country Name'])
+        cleanedCountryList['Country Name'])
 
     ports = col2.multiselect(
         'Choose a country or port',
-        deficiencies_at_port_country['Port'])
+        cleanedPortsList)
 
     d_from = col2.date_input(
         "From")
