@@ -119,28 +119,26 @@ def page5():
     st.video(video_bytes,start_time=0)
 
 def page6():
-    st.markdown("# Grounds for detention based on port or country")
+    st.markdown("# Detention based on port or country")
 
 
     col1, col2 = st.columns([3, 1])
-    data = np.random.randn(10, 1)
-
 
     #Column 1 
     #ol1.subheader("A wide column with a chart")
-    df = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-        columns=['lat', 'lon'])
 
     col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
 
 
     # Column 2 
     #col2.subheader("A narrow column with the data")
-    options = col2.multiselect(
+    countries = col2.multiselect(
         'Choose a country or port',
-        ['Denmark', 'København', 'Falster', 'Germany'],
-        ['København', 'Falster'])
+        deficiencies_at_port_country['Country Name'])
+
+    ports = col2.multiselect(
+        'Choose a country or port',
+        deficiencies_at_port_country['Port'])
 
     d_from = col2.date_input(
         "From")
@@ -189,6 +187,8 @@ deficiencies_detention = pd.read_pickle('deficiencies_detention.pkl')
 deficiencies_detention_weighted = pd.read_pickle('deficiencies_weighted.pkl')
 
 deficiencyCodes = deficiencies.index.tolist()
+
+deficiencies_at_port_country = pd.read_pickle('deficiencies_at_port_country.pkl')
 
 
 ship_age_weighted = pd.read_pickle('ship_age_weighted.pkl')
