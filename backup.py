@@ -145,7 +145,7 @@ def page6():
     #col2.subheader("A narrow column with the data")
     countries = col2.multiselect(
         'Choose a country or port',
-        cleanedCountryList['Country Name'])
+        cleanedCountryList)
 
     ports = col2.multiselect(
         'Choose a country or port',
@@ -171,7 +171,7 @@ page_names_to_funcs = {
     "Detentions vs Ship Type": page2,
     "Common Deficiencies": page3,
     "Detentions vs Age":page4,
-    "Common grounds for detention based on port or country":page6,
+    "Detention based on port or country":page6,
     "Classified Information (Dont Click)":page5,
 
 }
