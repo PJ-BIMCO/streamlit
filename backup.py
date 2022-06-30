@@ -144,11 +144,11 @@ def page6():
     # Column 2 
     #col2.subheader("A narrow column with the data")
     countries = col2.multiselect(
-        'Choose a country or port',
+        'Choose a country or state',
         cleanedCountryList)
 
     ports = col2.multiselect(
-        'Choose a country or port',
+        'Choose a port',
         cleanedPortsList)
 
     d_from = col2.date_input(
