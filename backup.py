@@ -215,7 +215,7 @@ def page6():
     col1.bar_chart(data=test, width=400, height=800)
 
 
-    st.markdown(my_time)
+    #st.markdown(my_time)
     st.markdown(type(df_new['Date of Inspection'][5714]))
     st.markdown(df_new.dtypes)
     #st.markdown(type(my_datetime))
