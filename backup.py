@@ -212,9 +212,9 @@ def page6():
     if weight:
         for index, row in count_df.iterrows():
             #row['Deficiency Descriptions'] = row['Deficiency Descriptions'] / weighted_global_deficiencies['n'][row['Deficiency Descriptions']]
+            st.markdown(index)
+            st.markdown(row['n'])
 
-            st.markdown(row['Deficiency Descriptions'])
-    
 
 
 
