@@ -213,7 +213,7 @@ def page6():
 
 
     st.markdown(my_time)
-    st.markdown(type(df_new['Date of Inspection']))
+    st.markdown(type(df_new['Date of Inspection'][5714]))
     #st.markdown(type(my_datetime))
 
     st.markdown(countryList)
