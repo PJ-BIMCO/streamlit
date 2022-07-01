@@ -187,12 +187,6 @@ def page6():
         df_new = df_new[df_new['Detained'] == True]
 
 
-    weightedList = []
-    if weight:
-        for index, row in df_new.iterrows():
-            #row['Deficiency Descriptions'] = row['Deficiency Descriptions'] / weighted_global_deficiencies['n'][row['Deficiency Descriptions']]
-
-            st.markdown(row['Deficiency Descriptions'])
 
 
 
@@ -209,6 +203,18 @@ def page6():
     count_df = pd.DataFrame.from_dict([countDict]).T
     count_df.columns = ['n']
     test = count_df.sort_values(by=['n'], ascending=False)
+
+
+
+
+
+    weightedList = []
+    if weight:
+        for index, row in count_df.iterrows():
+            #row['Deficiency Descriptions'] = row['Deficiency Descriptions'] / weighted_global_deficiencies['n'][row['Deficiency Descriptions']]
+
+            st.markdown(row['Deficiency Descriptions'])
+    
 
 
 
