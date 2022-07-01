@@ -149,7 +149,7 @@ def page6():
         'Choose a country or state',
         cleanedCountryList)
 
-    col2.markdown(countries)
+    col2.markdown(countryList)
     
     portList = col2.multiselect(
         'Choose a port',
