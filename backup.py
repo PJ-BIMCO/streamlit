@@ -223,9 +223,9 @@ def page6():
         test = pd.DataFrame.from_dict([weightedDict])
 
         test = test.T
-        #test.columns = ['n']
+        test.columns = ['n']
 
-        #test = test.sort_values(by='n', ascending=False)
+        test = test.sort_values(by='n', ascending=False)
 
 
         st.markdown(test)       
