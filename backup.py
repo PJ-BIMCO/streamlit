@@ -214,6 +214,7 @@ def page6():
 
     st.markdown(d_from)
     st.markdown(type(d_from))
+    st.markdown(type(d_to))
 
     st.markdown(countryList)
     st.markdown(portList)
