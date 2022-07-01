@@ -163,7 +163,7 @@ def page6():
         "To",
         datetime.datetime.now().date())
 
-    agree = col2.checkbox('Only Show Deficiencies of Detained Ships')
+    showDetained = col2.checkbox('Only Show Deficiencies of Detained Ships')
 
     #if agree:
 
@@ -186,12 +186,13 @@ def page6():
     df_new['Date of Inspection'] = df_new['Date of Inspection'].dt.date
 
 
-
-    #my_time = datetime.time()
-    #my_datetime = datetime.combine(d_from, my_time)
-
     df_new = df_new[df_new['Date of Inspection'] > d_from]
     df_new = df_new[df_new['Date of Inspection'] < d_to]
+
+
+
+    if showDetained:
+        df = df[df['Detained'] == True]
 
 
 
@@ -216,8 +217,8 @@ def page6():
 
 
     #st.markdown(my_time)
-    st.markdown(type(df_new['Date of Inspection'][5714]))
-    st.markdown(df_new.dtypes)
+    #st.markdown(type(df_new['Date of Inspection'][5714]))
+    #st.markdown(df_new.dtypes)
     #st.markdown(type(my_datetime))
 
     #st.markdown(countryList)
