@@ -145,7 +145,7 @@ def page6():
         'Choose a country or state',
         cleanedCountryList)
 
-    col2.markdown(countryList)
+    #col2.markdown(countryList)
     
     portList = col2.multiselect(
         'Choose a port',
@@ -228,16 +228,9 @@ def page6():
         test = test.sort_values(by='n', ascending=False)
 
 
-        st.markdown(test)       
-
-
-
+        #st.markdown(test)       
 
     #col1.bar_chart(data=test, width=400, height=800)
-
-
-
-
 
     data_country = pd.melt(test.reset_index(), id_vars=["index"])
     # Horizontal stacked bar chart
@@ -321,7 +314,7 @@ st.image(
     width=200,
 )
 
-selected_page = st.selectbox("Select a page", page_names_to_funcs.keys())
+selected_page = st.selectbox(page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 
 
