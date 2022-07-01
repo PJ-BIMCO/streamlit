@@ -187,10 +187,12 @@ def page6():
         df_new = df_new[df_new['Detained'] == True]
 
 
-
+    weightedList = []
     if weight:
-        for index, row in weighted_global_deficiencies.iterrows():
-            st.markdown(index)
+        for index, row in df_new.iterrows():
+            row['Deficiency Descriptions'] = row['Deficiency Descriptions'] / weighted_global_deficiencies['n'][row['Deficiency Descriptions']]
+
+            st.markdown(row['Deficiency Descriptions'])
 
 
 
