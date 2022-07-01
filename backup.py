@@ -185,7 +185,7 @@ def page6():
 
 
     my_time = datetime.time()
-    my_datetime = datetime.combine(d_from, my_time)
+    #my_datetime = datetime.combine(d_from, my_time)
 
     #df_new = df_new[df_new['Date of Inspection'].date() > d_from]
     #df_new = df_new[df_new['Date of Inspection'].date() < d_to]
@@ -212,9 +212,9 @@ def page6():
     col1.bar_chart(data=test, width=400, height=800)
 
 
-    st.markdown(d_from)
-    st.markdown(type(d_from))
-    st.markdown(type(my_datetime))
+    st.markdown(my_time)
+    st.markdown(type(my_time))
+    #st.markdown(type(my_datetime))
 
     st.markdown(countryList)
     st.markdown(portList)
