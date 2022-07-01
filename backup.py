@@ -207,7 +207,7 @@ def page6():
 
 
 
-    col1.bar_chart(data=test, width=400, height=800)
+    #col1.bar_chart(data=test, width=400, height=800)
 
 
 
