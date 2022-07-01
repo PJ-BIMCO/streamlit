@@ -207,12 +207,16 @@ def page6():
 
 
 
-    st.markdown(weighted_global_deficiencies)
+    
     weightedList = []
     if weight:
         for index, row in count_df.iterrows():
-            #test = row['n'] / weighted_global_deficiencies[index]
-            st.markdown(row['n'])
+            try:
+                #test = row['n'] / weighted_global_deficiencies[index]
+                #st.markdown(row['n'])
+                st.markdown(weighted_global_deficiencies['n'][[index]])
+            except:
+                pass
             
             
 
