@@ -183,6 +183,9 @@ def page6():
     df_new = pd.concat([df1, df2], ignore_index=False)
 
 
+    df_new['Date of Inspection'] = pd.to_datetime(df_new['Date of Inspection'])
+
+
 
     my_time = datetime.time()
     #my_datetime = datetime.combine(d_from, my_time)
@@ -213,7 +216,7 @@ def page6():
 
 
     st.markdown(my_time)
-    st.markdown(type(df_new['Date of Inspection'][5714].date()))
+    st.markdown(type(df_new['Date of Inspection'][5714]))
     st.markdown(df_new.dtypes)
     #st.markdown(type(my_datetime))
 
