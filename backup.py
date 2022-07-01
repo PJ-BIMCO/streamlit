@@ -156,10 +156,12 @@ def page6():
         cleanedPortsList)
 
     d_from = col2.date_input(
-        "From")
+        "From",
+        datetime.date(2019, 7, 1))
 
     d_to = col2.date_input(
-        "To")
+        "To",
+        datetime.date(2022, 7, 1))
 
     agree = col2.checkbox('Only Show Deficiencies of Detained Ships')
 
@@ -185,8 +187,8 @@ def page6():
     fromDate = datetime.datetime(2022, 6, 20)
     toDate   = datetime.datetime(2022, 7, 1)
 
-    df_new = df_new[df_new['Date of Inspection'] > d_from]
-    df_new = df_new[df_new['Date of Inspection'] < d_to]
+    #df_new = df_new[df_new['Date of Inspection'] > d_from]
+    3df_new = df_new[df_new['Date of Inspection'] < d_to]
 
 
 
@@ -209,6 +211,9 @@ def page6():
 
     col1.bar_chart(data=test, width=400, height=800)
 
+
+    st.markdown(d_from)
+    st.markdown(type(d_from))
 
     st.markdown(countryList)
     st.markdown(portList)
