@@ -173,6 +173,23 @@ def page6():
     combinedList = portList + countryList
     deficiencies_at_port_country_new = deficiencies_at_port_country[deficiencies_at_port_country['Port'].isin(combinedList)]
 
+
+    deficiencyList = []
+    for elem in deficiencies_at_port_country_new['Deficiency Descriptions']:
+        deficiencyList += elem
+    deficiencyList.sort()
+    countDict = dict(Counter(deficiencyList))
+    try:
+        del countDict['']
+    except:
+        pass
+    count_df = pd.DataFrame.from_dict([countDict]).T
+    count_df.columns = ['n']
+    test = count_df.sort_values(by=['n'], ascending=False)
+
+
+    
+
     col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
 
 
