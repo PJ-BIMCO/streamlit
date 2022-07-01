@@ -171,7 +171,7 @@ def page6():
 
 
     combinedList = portList + countryList
-    deficiencies_at_port_country_new = deficiencies_at_port_country[deficiencies_at_port_country['Port'].isin(combinedList)]
+    deficiencies_at_port_country_new = deficiencies_at_port_country[deficiencies_at_port_country['Country Name'].isin(combinedList)]
 
 
     deficiencyList = []
