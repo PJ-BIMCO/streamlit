@@ -214,7 +214,7 @@ def page6():
             try:
                 #test = row['n'] / weighted_global_deficiencies[index]
                 #st.markdown(row['n'])
-                st.markdown(weighted_global_deficiencies['n'][[index]])
+                st.markdown(weighted_global_deficiencies['n'][index])
             except:
                 pass
             
