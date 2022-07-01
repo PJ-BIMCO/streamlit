@@ -159,7 +159,9 @@ def page6():
         "To",
         datetime.datetime.now().date())
 
-    showDetained = col2.checkbox('Only Show Deficiencies of Detained Ships')
+    showDetained = col2.checkbox('Only Show Detained')
+
+    weight = col2.checkbox('Most Found Defeciencies Relative to Global Average')
 
     #if agree:
 
@@ -170,25 +172,27 @@ def page6():
     deficiencies_at_port_country_country_name = deficiencies_at_port_country[deficiencies_at_port_country['Country Name'].isin(countryList)]
     deficiencies_at_port_country_port = deficiencies_at_port_country[deficiencies_at_port_country['Port'].isin(portList)]
 
-
-
-
     df1 = deficiencies_at_port_country_country_name[deficiencies_at_port_country_country_name['Country Name'].isin(countryList)]
     df2 = deficiencies_at_port_country_port[deficiencies_at_port_country_port['Port'].isin(portList)]
 
     df_new = pd.concat([df1, df2], ignore_index=False)
 
-
     df_new['Date of Inspection'] = df_new['Date of Inspection'].dt.date
-
 
     df_new = df_new[df_new['Date of Inspection'] > d_from]
     df_new = df_new[df_new['Date of Inspection'] < d_to]
 
 
-
     if showDetained:
         df_new = df_new[df_new['Detained'] == True]
+
+
+
+    if weight:
+        for index, row in weighted_global_deficiencies.iterrows():
+            st.markdown(index)
+
+
 
 
     deficiencyList = []
@@ -277,6 +281,8 @@ deficiencyCodes = deficiencies.index.tolist()
 
 deficiencies_at_port_country = pd.read_pickle('deficiencies_at_port_country.pkl')
 
+
+weighted_global_deficiencies = pd.read_pickle('weighted_global_deficiencies.pkl')
 
 ship_age_weighted = pd.read_pickle('ship_age_weighted.pkl')
 
