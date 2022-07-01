@@ -161,7 +161,7 @@ def page6():
 
     d_to = col2.date_input(
         "To",
-        datetime.today())
+        datetime.date(2020, 1, 1))
 
     agree = col2.checkbox('Only Show Deficiencies of Detained Ships')
 
