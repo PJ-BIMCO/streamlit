@@ -208,18 +208,19 @@ def page6():
 
 
     
-    weightedList = []
+    weightedDict = {}
     if weight:
         
         for index, row in count_df.iterrows():
             try:
-                test = row['n'] / weighted_global_deficiencies['n'][index]
-                weightedList.append({index: test})
+                test1 = row['n'] / weighted_global_deficiencies['n'][index]
+                weightedDict[index] = test1
+
                 #st.markdown(test)
             except:
                 pass
         
-        test = pd.DataFrame.from_dict(weightedList)
+        test = pd.DataFrame.from_dict([weightedList])
 
         test = test.T
         #test.columns = ['n']
