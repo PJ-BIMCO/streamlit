@@ -169,13 +169,22 @@ def page6():
     #Column 1 
     #ol1.subheader("A wide column with a chart")
 
+    deficiencies_at_port_country_country_name = deficiencies_at_port_country[deficiencies_at_port_country['Country Name'].isin(countryList)]
+    deficiencies_at_port_country_port = deficiencies_at_port_country[deficiencies_at_port_country['Port'].isin(portList)]
 
-    combinedList = portList + countryList
-    deficiencies_at_port_country_new = deficiencies_at_port_country[deficiencies_at_port_country['Country Name'].isin(combinedList)]
+
+
+
+    df1 = deficiencies_at_port_country_country_name[deficiencies_at_port_country_country_name['Country Name'].isin(countryList)]
+    df2 = deficiencies_at_port_country_port[deficiencies_at_port_country_port['Port'].isin(portList)]
+
+    df_new = pd.concat([df1, df2], ignore_index=False)
+
+
 
 
     deficiencyList = []
-    for elem in deficiencies_at_port_country_new['Deficiency Descriptions']:
+    for elem in df_new['Deficiency Descriptions']:
         deficiencyList += elem
     deficiencyList.sort()
     countDict = dict(Counter(deficiencyList))
