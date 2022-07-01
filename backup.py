@@ -223,7 +223,7 @@ def page6():
             y = alt.Y("index", sort=alt.SortField(field="n", order='descending'))
         )
     )
-    st.altair_chart(chart1, use_container_width=True)
+    col1.altair_chart(chart1, use_container_width=True)
 
 
 
