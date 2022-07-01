@@ -171,7 +171,7 @@ def page6():
 
 
     combinedList = portList + countryList
-    df = df[df['Port'].isin(combinedList)]
+    deficiencies_at_port_country = deficiencies_at_port_country[deficiencies_at_port_country['Port'].isin(combinedList)]
 
     col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
 
