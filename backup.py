@@ -133,10 +133,6 @@ def page6():
     cleanedPortsList.sort()
 
 
-    
-
-
-
     st.markdown("# Detention based on port or country")
 
 
@@ -192,9 +188,7 @@ def page6():
 
 
     if showDetained:
-        df = df[df['Detained'] == True]
-
-
+        df_new = df_new[df_new['Detained'] == True]
 
 
     deficiencyList = []
