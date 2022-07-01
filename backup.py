@@ -133,10 +133,6 @@ def page6():
     cleanedPortsList.sort()
 
 
-     portList = ['Antwerpen','Halifax']
-    # sort by country
-    countryList = ['Denmark', 'Germany']
-    # add lists together
     
 
 
