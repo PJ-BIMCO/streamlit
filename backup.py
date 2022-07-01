@@ -192,7 +192,10 @@ def page6():
 
     col1.bar_chart(data=test, width=400, height=800)
 
+
+    st.markdown(combinedList)
     st.markdown(test)
+    st.markdown(deficiencyList)
 
 
     # Whole page
