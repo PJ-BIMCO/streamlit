@@ -220,7 +220,7 @@ def page6():
             except:
                 pass
         
-        test = pd.DataFrame.from_dict([weightedList])
+        test = pd.DataFrame.from_dict([weightedDict])
 
         test = test.T
         #test.columns = ['n']
