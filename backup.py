@@ -210,6 +210,23 @@ def page6():
     col1.bar_chart(data=test, width=400, height=800)
 
 
+
+
+
+    data_country = pd.melt(test.reset_index(), id_vars=["index"])
+    # Horizontal stacked bar chart
+    chart1 = (
+        alt.Chart(data_country)
+            .mark_bar()
+            .encode(
+            x=alt.X("value", type="quantitative", title="Number of Times Found"),
+            y = alt.Y("index", sort=alt.SortField(field="n", order='descending'))
+        )
+    )
+    st.altair_chart(chart1, use_container_width=True)
+
+
+
     #st.markdown(my_time)
     #st.markdown(type(df_new['Date of Inspection'][5714]))
     #st.markdown(df_new.dtypes)
