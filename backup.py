@@ -187,11 +187,11 @@ def page6():
 
 
 
-    my_time = datetime.time()
+    #my_time = datetime.time()
     #my_datetime = datetime.combine(d_from, my_time)
 
-    #df_new = df_new[df_new['Date of Inspection'].date() > d_from]
-    #df_new = df_new[df_new['Date of Inspection'].date() < d_to]
+    df_new = df_new[df_new['Date of Inspection'] > d_from]
+    df_new = df_new[df_new['Date of Inspection'] < d_to]
 
 
 
