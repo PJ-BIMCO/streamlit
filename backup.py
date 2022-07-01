@@ -185,8 +185,8 @@ def page6():
     fromDate = datetime.datetime(2022, 6, 20)
     toDate   = datetime.datetime(2022, 7, 1)
 
-    df_new = df_new[df_new['Date of Inspection'] > fromDate]
-    df_new = df_new[df_new['Date of Inspection'] < toDate]
+    df_new = df_new[df_new['Date of Inspection'] > d_from]
+    df_new = df_new[df_new['Date of Inspection'] < d_to]
 
 
 
