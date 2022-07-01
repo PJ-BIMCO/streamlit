@@ -132,26 +132,30 @@ def page6():
     cleanedPortsList = [x for x in portsList if str(x) != 'nan' or not str(x)]
     cleanedPortsList.sort()
 
+
+     portList = ['Antwerpen','Halifax']
+    # sort by country
+    countryList = ['Denmark', 'Germany']
+    # add lists together
+    
+
+
+
     st.markdown("# Detention based on port or country")
 
 
     col1, col2 = st.columns([3, 1])
 
-    #Column 1 
-    #ol1.subheader("A wide column with a chart")
-
-    col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
-
 
     # Column 2 
     #col2.subheader("A narrow column with the data")
-    countries = col2.multiselect(
+    countryList = col2.multiselect(
         'Choose a country or state',
         cleanedCountryList)
 
     col2.markdown(countries)
     
-    ports = col2.multiselect(
+    portList = col2.multiselect(
         'Choose a port',
         cleanedPortsList)
 
@@ -164,6 +168,16 @@ def page6():
     agree = col2.checkbox('Only Show Deficiencies of Detained Ships')
 
     #if agree:
+
+
+    #Column 1 
+    #ol1.subheader("A wide column with a chart")
+
+
+    combinedList = portList + countryList
+    df = df[df['Port'].isin(combinedList)]
+
+    col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
 
 
     # Whole page
