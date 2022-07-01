@@ -208,9 +208,9 @@ def page6():
 
 
     
-    
+    weightedList = []
     if weight:
-        weightedList = []
+        
         for index, row in count_df.iterrows():
             try:
                 test = row['n'] / weighted_global_deficiencies['n'][index]
@@ -218,9 +218,16 @@ def page6():
                 #st.markdown(test)
             except:
                 pass
-            
-            
-    st.markdown(weightedList)       
+        
+        test = pd.DataFrame.from_dict(weightedList)
+
+        test = test.T
+        test.columns = ['n']
+
+        test = test.sort_values(by='n', ascending=False)
+
+
+        st.markdown(test)       
 
 
 
