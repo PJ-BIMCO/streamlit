@@ -183,7 +183,7 @@ def page6():
     df_new = pd.concat([df1, df2], ignore_index=False)
 
 
-    df_new['Date of Inspection'] = pd.to_datetime(df_new['Date of Inspection'])
+    df_new['Date of Inspection'] = df_new['Date of Inspection'].dt.date
 
 
 
