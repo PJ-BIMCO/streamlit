@@ -184,11 +184,11 @@ def page6():
 
 
 
-    fromDate = datetime.datetime(2022, 6, 20)
-    toDate   = datetime.datetime(2022, 7, 1)
+    my_time = datetime.min.time()
+    my_datetime = datetime.combine(d_from, my_time)
 
-    df_new = df_new[df_new['Date of Inspection'].date() > d_from]
-    df_new = df_new[df_new['Date of Inspection'].date() < d_to]
+    #df_new = df_new[df_new['Date of Inspection'].date() > d_from]
+    #df_new = df_new[df_new['Date of Inspection'].date() < d_to]
 
 
 
@@ -214,7 +214,7 @@ def page6():
 
     st.markdown(d_from)
     st.markdown(type(d_from))
-    st.markdown(type(d_to))
+    st.markdown(type(my_datetime))
 
     st.markdown(countryList)
     st.markdown(portList)
