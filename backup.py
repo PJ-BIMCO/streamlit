@@ -184,7 +184,7 @@ def page6():
 
 
 
-    my_time = datetime.min.time()
+    my_time = datetime.time()
     my_datetime = datetime.combine(d_from, my_time)
 
     #df_new = df_new[df_new['Date of Inspection'].date() > d_from]
