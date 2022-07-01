@@ -182,6 +182,14 @@ def page6():
 
 
 
+    fromDate = datetime.datetime(2022, 6, 20)
+    toDate   = datetime.datetime(2022, 7, 1)
+
+    df_new = df_new[df_new['Date of Inspection'] > fromDate]
+    df_new = df_new[df_new['Date of Inspection'] < toDate]
+
+
+
 
     deficiencyList = []
     for elem in df_new['Deficiency Descriptions']:
