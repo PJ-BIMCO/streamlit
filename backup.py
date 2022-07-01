@@ -188,9 +188,9 @@ def page6():
     test = count_df.sort_values(by=['n'], ascending=False)
 
 
-    
 
-    col1.bar_chart(data=shipTypeWeighted, width=400, height=800)
+
+    col1.bar_chart(data=test, width=400, height=800)
 
 
     # Whole page
