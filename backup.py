@@ -267,7 +267,6 @@ page_names_to_funcs = {
     "Common Deficiencies": page3,
     "Detentions vs Age":page4,
     "Detention based on port or country":page6,
-    "Classified Information (Dont Click)":page5,
 
 }
 
